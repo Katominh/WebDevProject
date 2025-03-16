@@ -119,10 +119,6 @@ article p {
     color: rgb(249, 218, 142);
 }
 
-article p {
-    text-align: left;
-}
-
 /* Videos */
 iframe {
     border: 5px solid darkgoldenrod;
