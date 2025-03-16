@@ -115,8 +115,8 @@
     </header>
 
     <!--Main Content-->
-    <div>
-        <h2 id="websites">Websites</h2>
+    <div id="websites">
+        <h2>Websites</h2>
         <dl>
             <!-- Solar System General -->
             <dt><strong>Solar System</strong></dt>
@@ -202,8 +202,8 @@
 
 
     <!-- Sources to ALL videos here -->
-    <div>
-        <h2 id="videos">Videos</h2>
+    <div id="videos">
+        <h2>Videos</h2>
         <dl>
             <dd>
                 CGP Grey. “Is Pluto a Planet?” <i>YouTube</i>, 29 May 2012, 
@@ -269,8 +269,8 @@
 
 
     <!-- Popdlar Space News Sites -->
-    <div>
-        <h2 id="news">News Articles</h2>
+    <div id="news">
+        <h2>News Articles</h2>
         <dl>
             <dd>
                 “Astronomy Magazine - Interactive Star Charts, Planets, Meteors, Comets, Telescopes.”
@@ -296,8 +296,8 @@
 
 
     <!-- More stuffs NOT included in our websites -->
-    <div>
-        <h2 id="space">Find Even More About Space!</h2>
+    <div id="space">
+        <h2>Find Even More About Space!</h2>
         <dl>
             <dt><strong>NASA</strong></dt>
             <dd>
@@ -349,6 +349,46 @@
         </dl>
     </div>
 
+    <div>
+        <h2>Interested in Following Us?</h2>
+        <fieldset style="width: 50%; margin: auto;">
+            <legend>Subcribe to Our Website!</legend>
+            <form method="post" style="margin: 1rem; line-height: 150%;">
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required> <br>
+                <label for="phone">Phone (Optional): </label>
+                <input type="tel" id="phone" name="phone"> <br>
+                <label for="space"> Interested in news outside of Solar System? </label>
+                <select name="space" id="space">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select> <br>
+                <label for="news"> Want to recieve news from other space websites? </label>
+                <select name="news" id="news">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+                <br> <br>
+                <input type="button" value="Subscribe! 🚀" onclick="sent()" style="padding: .5rem;">
+            </form>
+        </fieldset>
+        <h2 id="output"></h2>
+        <script>
+            function sent(){
+                const email = document.getElementById('email').value;
+                if (email == "") {
+                    document.getElementById('output').style.color = "red";
+                    document.getElementById('output').innerHTML = "Please enter your email!"
+                    return;
+                }
+
+                document.getElementById('output').style.color = "darkgoldenrod";
+                document.getElementById('output').innerHTML = "Thank you for your interest! 🚀<br>" 
+                                                            + "We wish you have a great time learning! 🌌"
+            }
+        </script>
+    </div>
+    <!-- Bottom Navigation -->
     <nav class="bottom">
         <a class="mainLink" href="../index.html" style="transition: .3s;">
             <h1>To Other Planets!</h1>
@@ -385,7 +425,7 @@
             </ul>
         </div>
         <div class="Contact Footer">Contact Us
-            <div style="display: flex; align-items: center; margin: 0px; padding: 10px;">
+            <div style="display: flex; margin: 0px; padding: 10px;">
                 <a href="https://www.instagram.com">
                     <img src="/images/Instagram.png" alt="Instagram Logo">
                     Instagram
