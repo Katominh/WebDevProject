@@ -14,10 +14,6 @@
 
     <!--Meercury Style body-->
     <style>
-        h2 {
-            font-size: 1.3vw;
-        }
-
         body {
             width: 100%;
         }
@@ -33,9 +29,10 @@
         .mercury-rotation {
             display: grid;
             grid-column: span;
-            width: auto;
-            height: 30vw;
-            max-height: 20vw;
+            width: 10vw;
+            max-width: 500px;
+            min-width: 200px;
+            height: auto;
         }
 
         .mercury-day {
@@ -46,12 +43,10 @@
 
         ul {
             margin-right: 20px;
-            font-size: 1.3vw;
         }
 
         .mercury-day .mercury-day-text {
             margin-right: 20px;
-            font-size: 1.3vw;
         }
 
         .mercury-tail{
@@ -160,7 +155,7 @@
     <!--Mercury Time-->
     <div class="body">
         <h2>Mercury&apos;s Day vs Year</h2>
-        <div class="mercury-day">
+        <div class="mercury-day flex">
             <ul class="mercury-day-text">
                 <li>Mercury&apos;s Rotation is Exterememly slow</li>
                 <ul>
