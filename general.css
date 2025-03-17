@@ -1,4 +1,8 @@
 /* Jason's Work */
+/*
+    This layout is for the general aesthetics and theme. 
+    It contains the most common element CSS that all/most websites will share.
+*/
 
 * {
     /* Added border box for easier CSS layout */
@@ -39,8 +43,12 @@ h3 {
     text-align: center;
 }
 
+h1 {
+    text-shadow: 1px 1px 10px black;
+}
+
+/* for Header too */
 #index {
-    /* for Header too */
     background: darkcyan url(https://png.pngtree.com/thumb_back/fh260/background/20240430/pngtree-orange-light-background-image_15722879.jpg);
     background-position: cover;
     background-repeat: no-repeat;
@@ -58,8 +66,14 @@ nav.bottom {
     margin: 1rem 1rem;
     padding: 2em;
     border-radius: 10px;
+    transition: .5s;
 }
 
+nav.bottom:hover {
+    box-shadow: 1px 1px 10px wheat;
+}
+
+/* To alternate planets background images */
 .right,
 .left,
 body>div {
@@ -76,6 +90,12 @@ div.left {
 }
 
 /* For floating images & text boxes */
+img,
+table {
+    box-shadow: 0 0 10px gray;
+}
+
+/* Floating images and text */
 .specialText,
 .specialText p,
 .specialText img {
@@ -121,7 +141,7 @@ article p {
     color: rgb(249, 218, 142);
 }
 
-/* Videos */
+/* Videos & Iframe */
 iframe {
     border: 5px solid darkgoldenrod;
     border-radius: 10px;
@@ -147,6 +167,7 @@ iframe {
 .planets:hover h2,
 .planets:hover p {
     color: aqua;
+    text-shadow: 1px 1px 20px wheat;
 }
 
 .planets:active h2,
@@ -162,6 +183,7 @@ iframe {
     font-size: 110%;
 }
 
+/* Navigation link */
 nav.bottom {
     border: 4px double #e1a900;
     background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20240430/pngtree-orange-light-background-image_15722879.jpg);
@@ -172,7 +194,6 @@ nav.bottom {
     margin-right: auto;
 }
 
-/* Navigation link */
 .navigate a {
     color: darkblue;
     transition: .3s;
@@ -190,6 +211,7 @@ nav.bottom {
 /* "To Other Planets" Link */
 .mainLink {
     color: white;
+    text-decoration: none;
 }
 
 .mainLink:hover {
@@ -318,18 +340,20 @@ footer {
 
 /* Clock - Current time */
 #time {
+    width: 100%;
     background-color: rgb(0, 137, 196);
     color: white;
     text-align: center;
 }
 
-/* Mobile phones */
-@media only screen and (max-width: 850px) {
+/* Mobile phones (Hide weird navigation) */
+@media only screen and (max-width: 900px) {
     nav.topNav {
         display: none;
     }
 }
 
+/* Mobile phones (Primary) */
 @media only screen and (max-width: 650px) {
 
     .specialText,

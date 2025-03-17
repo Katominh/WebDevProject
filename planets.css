@@ -1,8 +1,11 @@
 /* Jason's Work*/
+/*
+    This layout is intended to be used for all the invidual planet webpages because of their similarity.
+    Complementary to general.css, this CSS allows for a more specialized version for each planet's webpage.
+    DO NOT include: index.html & sources.html
+*/
 
 /* Main Body */
-
-/*Planet Headers CSS disigns*/
 body {
     background-image: url(https://i0.wp.com/astronomicca.com/wp-content/uploads/2022/01/Cassiopeia.jpg?resize=1200%2C1200&ssl=1);
 }
@@ -31,7 +34,6 @@ h3 {
 }
 
 /* Images */
-
 img {
     border-radius: 10px;
 }
@@ -63,14 +65,16 @@ a {
 
 /* Tables */
 table {
-    width: 75%; 
+    width: 75%;
     margin: auto;
     border: 4px double darkslategray;
     background-color: rgb(175, 232, 255);
     text-align: center;
     border-radius: 10px;
 }
-th, td {
+
+th,
+td {
     border: 2px double darkslategray;
     padding: 1rem 0.5rem;
     transition: .3s;
@@ -80,6 +84,7 @@ td:hover {
     color: rgb(120, 66, 0);
     font-size: 110%;
 }
+
 /* Basic flex structure */
 .flex {
     display: flex;
