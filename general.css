@@ -316,6 +316,13 @@ footer {
     width: 70px;
 }
 
+/* Clock - Current time */
+#time {
+    background-color: rgb(0, 137, 196);
+    color: white;
+    text-align: center;
+}
+
 /* Mobile phones */
 @media only screen and (max-width: 850px) {
     nav.topNav {

@@ -129,6 +129,10 @@
         </a>
     </nav>
 
+    <!--Links to JavaScript & get time-->
+    <section id="time">Time Loading...</section>
+    <script src="/time.js"></script>
+
     <!--Website Main Title-->
     <header id="index">
         <h1>Sources</h1>
@@ -408,7 +412,7 @@
             function sent() {
                 const email = document.getElementById('email').value;
                 if (email == "") {
-                    window.alert("Please enter your email!");
+                    window.alert("Please enter your email!"); // Set up alert
                     return;
                 }
 
