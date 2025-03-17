@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="../general.css">
     <link rel="stylesheet" href="../planets.css">
 
-    <!--Mars Style body-->
+    <!--Meercury Style body-->
     <style>
+        
         h2 {
             font-size: 2vw;
         }
@@ -29,31 +30,47 @@
             border: 4px solid rgb(104, 105, 109);
         }
 
-        img {
+        .mercury-rotation{
             display: grid;
             grid-column: span;
             width: auto;
             height: 30vw;
+            max-height: 20vw;
         }
 
-        .MarsMoon {
-            width: 10vh;
-            height: 40vw;
-        }
-        .mercury-day{
+        .mercury-day {
             display: flex;
             justify-content: space-between;
 
         }
-        .mercury-day .mercury-day-text{
-            padding: 0;
+
+        ul{
             margin-right: 20px;
-            font-size: 2vw;
+            font-size: 1vw;
+        }
+        .mercury-day .mercury-day-text {
+            margin-right: 20px;
+            font-size: 1vw;
         }
     </style>
 </head>
 
 <body>
+
+     <!-- Top Navigation -->
+     <nav class="topNav flex">
+        <a href="/index.html"><div>Solar System</div></a>
+        <a id="selected"><div>Mercury</div></a>
+        <a href="/Planets/venus.html"><div>Venus</div></a>
+        <a href="/Planets/earth.html"><div>Earth</div></a>
+        <a href="/Planets/mars.html"><div>Mars</div></a> 
+        <a href="/Planets/jupiter.html"><div>Jupiter</div></a> 
+        <a href="/Planets/saturn.html"><div>Saturn</div></a> 
+        <a href="/Planets/uranus.html"><div>Uranus</div></a> 
+        <a href="/Planets/neptune.html"><div>Neptune</div></a>
+        <a href="/sources.html"><div>Sources</div></a>
+    </nav>
+
     <!--Website Main Title-->
     <header class="mercuryHeader">
         <h1>Mercury</h1>
@@ -126,24 +143,18 @@
                 </ul>
                 <li>3:2 Spin-Orbit Resonance</li>
                 <ul>
-                    <li>Unlike most planets, every 3 spins Mercury does on its axis it completes 2 orbits around the sun.</li>
+                    <li>Unlike most planets, every 3 spins Mercury does on its axis it completes 2 orbits around the
+                        sun.</li>
                 </ul>
             </ul>
-            <img src="https://woosterphysicists.scotblogs.wooster.edu/files/2018/05/Mercury7Loop.gif"
+            <img class="mercury-rotation" src="https://woosterphysicists.scotblogs.wooster.edu/files/2018/05/Mercury7Loop.gif"
                 alt="mercury day vs year">
         </div>
     </div>
     <div class="body">
         <h2>Gallery</h2>
         <section class="gallery">
-            <img src="https://cdn.britannica.com/74/21174-050-01630AAB/volcano-Olympus-Mons-Mars-base-mosaic-spacecraft.jpg"
-                alt="Olympus Mons">
-            <img src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/09/v/VallesMarineris_withUSAoutline_UPDATED_5000x5000.jpg"
-                alt="Mars Canyon">
-            <img src="https://spaceplace.nasa.gov/review/planets-weight/planets-weight3.en.png" alt="Weight on Mars">
-            <img class="MarsMoon"
-                src="https://lh5.googleusercontent.com/proxy/k5TzdGOuQ_AdxxCLTvKiKHGfm3zKNu5W0rNms4lYebK4de_CxLX8id4E9NPAgQTQN2cQdNRjNxI6_GxrwnASku7pV2NT5y4_wYvsaks_ze1CN5_NkD8"
-                alt="Mars Moons Size Coomarison">
+           <!--For gallery pics-->
         </section>
     </div>
 
@@ -155,12 +166,53 @@
             <li><a href="/Planets/mercury.html"> Mercury</a> |</li>
             <li><a href="/Planets/venus.html"> Venus</a> |</li>
             <li><a href="/Planets/earth.html">Earth</a> |</li>
-            <li>&nbsp;Mars&nbsp;|</li>
+            <li>&nbsp;Mercury&nbsp;|</li>
             <li><a href="/Planets/jupiter.html">Jupiter</a> |</li>
             <li><a href="/Planets/saturn.html">Saturn</a> |</li>
             <li><a href="/Planets/uranus.html">Uranus</a> |</li>
             <li><a href="/Planets/neptune.html">Neptune</a></li>
         </ul>
     </nav>
+
+    <!--Footer-->
+    <footer class="footermercury">
+        <div class="Solar Footer">
+            <p>
+                <span style="font-size: 150%;">
+                    <strong>Solar System Planets</strong>
+                </span> <br>
+                are truly majestic and fascinating, aren't they? There are still so many unknown things waiting
+                to be explored and discovered ahead of you! 🚀
+            </p>
+        </div>
+
+        <div class="Source Footer">Explore Sources!
+            <ul>
+                <li><a href="/sources.html#websites">Websites</a></li>
+                <li><a href="/sources.html#videos">Videos</a></li>
+                <li><a href="/sources.html#news">News Articles</a></li>
+            </ul>
+        </div>
+        <div class="Contact Footer">Contact Us
+            <div style="display: flex; align-items: center; margin: 0px; padding: 10px;">
+                <a href="https://www.instagram.com">
+                    <img src="/images/Instagram.png" alt="Instagram Logo">
+                    Instagram
+                </a>
+                <a href="https://discord.com">
+                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source"
+                        alt="Discord Logo">
+                    Discord
+                </a>
+                <a href="https://www.facebook.com">
+                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc"
+                        alt="Facebook Logo">
+                    Facebook
+                </a>
+
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
