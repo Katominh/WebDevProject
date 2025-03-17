@@ -61,6 +61,25 @@ a {
     transition: .3s;
 }
 
+/* Tables */
+table {
+    width: 75%; 
+    margin: auto;
+    border: 4px double darkslategray;
+    background-color: rgb(175, 232, 255);
+    text-align: center;
+    border-radius: 10px;
+}
+th, td {
+    border: 2px double darkslategray;
+    padding: 1rem 0.5rem;
+    transition: .3s;
+}
+
+td:hover {
+    color: rgb(120, 66, 0);
+    font-size: 110%;
+}
 /* Basic flex structure */
 .flex {
     display: flex;
