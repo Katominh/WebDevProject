@@ -64,13 +64,22 @@ h3 {
 div,
 nav.bottom {
     margin: 1rem 1rem;
-    padding: 2em;
+    padding: 1.5rem 1rem;
     border-radius: 10px;
     transition: .5s;
 }
 
 nav.bottom:hover {
     box-shadow: 1px 1px 10px wheat;
+}
+
+nav.bottom>a>h1 {
+    margin: 0 auto 1rem auto;
+}
+nav.bottom>p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 75%;
 }
 
 /* To alternate planets background images */
