@@ -54,13 +54,15 @@ h3 {
 
 /* Mainly Div & Nav Elements */
 div,
-nav {
+nav.bottom {
     margin: 1rem 1rem;
     padding: 2em;
     border-radius: 10px;
 }
 
-.right, .left, body > div {
+.right,
+.left,
+body>div {
     background-color: rgba(255, 250, 245, 0.96);
     border: 4px solid rgb(0, 49, 81);
 }
@@ -119,10 +121,6 @@ article p {
     color: rgb(249, 218, 142);
 }
 
-article p {
-    text-align: left;
-}
-
 /* Videos */
 iframe {
     border: 5px solid darkgoldenrod;
@@ -156,8 +154,13 @@ iframe {
     color: darkblue;
 }
 
-.planets:hover h2 {font-size: 160%;}
-.planets:hover p {font-size: 110%;}
+.planets:hover h2 {
+    font-size: 160%;
+}
+
+.planets:hover p {
+    font-size: 110%;
+}
 
 nav.bottom {
     border: 4px double #e1a900;
@@ -198,7 +201,42 @@ nav.bottom {
     color: darkblue;
 }
 
-/* Nav List Format */
+/* Top Nav Format */
+nav.topNav {
+    display: flex;
+    background-color: rgba(13, 0, 47, 0.98);
+    width: 100%;
+    text-align: center;
+}
+
+nav.topNav>a {
+    text-decoration: none;
+    width: 10%;
+}
+
+nav.topNav>a>div {
+    border: 2px solid rgb(53, 149, 191);
+    border-bottom: 3px solid rgb(53, 149, 191);
+    height: 95px;
+    margin: 0;
+    border-radius: 0;
+    transition: .3s;
+    color: white;
+}
+
+nav.topNav>a>div:hover {
+    background-color: rgb(42, 133, 172);
+    color: rgb(211, 255, 255);
+    font-size: 110%;
+}
+
+a#selected>div {
+    background-color: rgb(0, 137, 196);
+    color: rgb(211, 255, 255);
+    font-size: 110%;
+}
+
+/* Bottom Nav List Format */
 .navigate {
     list-style-type: none;
     display: flex;
@@ -254,7 +292,7 @@ footer {
 .Footer a {
     color: rgb(231, 231, 231);
     transition: .5s;
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
@@ -279,11 +317,17 @@ footer {
 }
 
 /* Mobile phones */
+@media only screen and (max-width: 850px) {
+    nav.topNav {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 650px) {
 
     .specialText,
     footer,
-    .Contact > div > a {
+    .Contact>div>a {
         flex-direction: column;
     }
 
