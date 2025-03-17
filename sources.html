@@ -408,8 +408,7 @@
             function sent() {
                 const email = document.getElementById('email').value;
                 if (email == "") {
-                    document.getElementById('output').style.color = "red";
-                    document.getElementById('output').innerHTML = "Please enter your email!"
+                    window.alert("Please enter your email!");
                     return;
                 }
 
