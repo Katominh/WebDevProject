@@ -40,6 +40,20 @@
             margin: auto;
             border-radius: 10px;
         }
+
+        .EarthNight>h2+p {
+            margin-bottom: 50vh;
+        }
+        
+        /* Hides Extraneous Elements */
+        @media only screen and (max-width: 850px) {
+            .EarthNight>h2+p {
+                margin: 1rem;
+            }
+            iframe {
+                min-height: 32vh;
+            }
+        }
     </style>
 </head>
 
@@ -78,9 +92,9 @@
         <figure class="gallery">
             <img src="https://www.worldatlas.com/r/w1200/upload/67/bc/2a/shutterstock-126712838.jpg"
                 alt="Marine Ecosystem">
-            <img src="https://spiritbear.com/wp-content/uploads/2019/08/image-72-oiam-1.jpg" alt="Forest Ecosystem">
+            <img src="https://spiritbear.com/wp-content/uploads/2019/08/image-72-oiam-1.jpg" alt="Forest Ecosystem" class="extra">
             <img src="https://www.antarctica.gov.au/site/assets/files/38665/phytoplankton.1600x0.jpg"
-                alt="Microscopic Ecosystem">
+                alt="Microscopic Ecosystem"  class="extra">
         </figure>
     </div>
 
@@ -94,6 +108,7 @@
                 <li><strong>Rotation Period:</strong> ~24 hours</li>
                 <li><strong>Diameter:</strong> ~12,742 km</li>
                 <li><strong>Moons:</strong> 1 (The Moon)</li>
+                <br>
             </ul>
             <img src="https://science8sc.weebly.com/uploads/1/3/2/7/132773018/earth-revolution-gif_orig.gif"
                 alt="Earth's Orbit" style="flex: 2; width: 100%">
@@ -104,8 +119,9 @@
         <h2>Fun Facts</h2>
         <div class="flex">
             <img src="https://assets.weforum.org/editor/Y_PY-SuflS7dEIMvw9OGsKwXzZhY9Z4wX55JDyO4zPo.jpeg"
-                alt="Earth's Altitude" style="width: 50%;">
+                alt="Earth's Altitude" style="width: 80%; max-width: 500px;">
             <ul>
+                <br>
                 <li>Earth is the only planet not named after a Roman or Greek god.</li>
                 <li>70% of Earth's surface is covered in water.</li>
                 <li>Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and trace amounts of other gases.</li>
@@ -164,7 +180,7 @@
     </div>
 
     <!--Map on Earth-->
-    <div>
+    <div class="extra">
         <h2>Play with Google Earth Map</h2>
         <p>
             Let's explore the Earth with <u>Google Earth</u>, won't you? Select any places you want to wish and see all
@@ -181,7 +197,7 @@
     <!--Map at Night-->
     <div class="EarthNight">
         <h2 style="color: lightgoldenrodyellow;">Earth at Night!</h2>
-        <p style="margin-bottom: 50vh;">
+        <p>
             <span>
                 Isn't it look so beautiful? This map shows the Earth at night, with the lights of cities and towns
                 visible even
@@ -190,7 +206,7 @@
                 of light.
             </span>
         </p>
-        <p>
+        <p class="extra">
             <span>
                 There are a lot of fascinating and absurd stories to be told from this map, don't you think? Check this
                 video out! <br>
@@ -201,7 +217,7 @@
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             Something Went Wrong 😞 Sorry!
         </iframe>
-        <p style="margin-top: 0; font-size: 75%; text-align: center;">
+        <p class="extra" style="margin-top: 0; font-size: 75%; text-align: center;">
             &copy; Video by neo 2019
         </p>
     </div>

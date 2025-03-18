@@ -110,7 +110,14 @@ td:hover {
 
     .gallery img,
     .flex {
-        width: 100%;
         flex-direction: column;
+    }
+
+    .gallery img {
+        width: 50%;
+    }
+
+    .flex {
+        width: 100%;
     }
 }
