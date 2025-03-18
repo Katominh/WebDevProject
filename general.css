@@ -30,7 +30,7 @@ footer {
 /* Headings/Headers Elements */
 header {
     background-color: #333333;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 .5rem .5rem;
     color: white;
     font-size: 200%;
     padding-top: 5px;
@@ -72,7 +72,6 @@ h2 {
 
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -86,7 +85,7 @@ h2 {
 
 h3 {
     color: rgb(0, 0, 62);
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 
 /* Mainly Div & Nav Elements */
@@ -94,7 +93,7 @@ div,
 nav.bottom {
     margin: 1rem 1rem;
     padding: 1.5rem 1rem;
-    border-radius: 10px;
+    border-radius: .5rem;
     transition: .5s;
 }
 
@@ -135,10 +134,14 @@ table {
 }
 
 /* Floating images and text */
+p {
+    font-size: 1rem;
+}
+
 .specialText,
 .specialText p,
 .specialText img {
-    border-radius: 10px;
+    border-radius: .5rem;
     margin: auto;
 }
 
@@ -370,7 +373,7 @@ footer {
     transition: .3s;
     margin-left: 1rem;
     margin-right: 8px;
-    border-radius: 10px;
+    border-radius: .5rem;
 }
 
 .Footer img:hover {
