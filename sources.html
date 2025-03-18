@@ -16,6 +16,7 @@
         /* Colour theme */
         body {
             width: 100%;
+            overflow-x: hidden;
         }
 
         body>div {
@@ -27,6 +28,7 @@
             text-align: center;
         }
 
+        /* For each category */
         strong {
             line-height: 2rem;
         }
@@ -39,7 +41,7 @@
             font-size: 105%;
             size: 105%;
         }
-
+        /* Links */
         a {
             transition: .5s;
         }
@@ -48,6 +50,7 @@
             color: rgb(122, 89, 0);
         }
 
+        /* Clickable Images */
         dl>a>img {
             display: block;
             margin: .5rem auto;
@@ -66,6 +69,15 @@
             transition: .5s;
         }
 
+        /* For Our Names */
+        th>img {
+            width: 20vw; 
+            min-width: 70px; 
+            text-align: center; 
+            border-radius: 50%;
+        }
+
+        /* Phone */
         @media screen and (max-width: 830px) {
             dl>a>img {
                 min-width: 100%;
@@ -83,11 +95,6 @@
                 margin: 7px 0;
                 padding: 1rem;
             }
-        }
-
-        body {
-            width: 100vw;
-            overflow-x: hidden;
         }
     </style>
 </head>
@@ -138,10 +145,10 @@
             <a href="/Planets/mercury.html">Mercury</a>
             <a href="/Planets/venus.html">Venus</a>
             <a href="/Planets/earth.html">Earth</a>
-            <a href="/Planets/mars.html">Mars</a> 
-            <a href="/Planets/jupiter.html">Jupiter</a> 
-            <a href="/Planets/saturn.html">Saturn</a> 
-            <a href="/Planets/uranus.html">Uranus</a> 
+            <a href="/Planets/mars.html">Mars</a>
+            <a href="/Planets/jupiter.html">Jupiter</a>
+            <a href="/Planets/saturn.html">Saturn</a>
+            <a href="/Planets/uranus.html">Uranus</a>
             <a href="/Planets/neptune.html">Neptune</a>
             <a>Sources</a>
         </div>
@@ -559,6 +566,30 @@
                     + "We wish you have a great time learning! 🌌"
             }
         </script>
+
+        <h2>This is Made Possible By:</h2>
+        <table style="box-shadow:none; width: 80%; margin: auto">
+            <tr>
+                <th>
+                    <img src="/images/Edilson.png" alt="Jason" style="width: 20vw; min-width: 70px; text-align: center; border-radius: 50%;">
+                    <p style="text-align: center;">
+                        Edilson Chi
+                    </p>
+                </th>
+                <th>
+                    <img src="/images/Jason.png" alt="Jason" style="width: 20vw; min-width: 70px; text-align: center; border-radius: 50%;">
+                    <p style="text-align: center;">
+                        Minh Khang Nguyen
+                    </p>
+                </th>
+                <th>
+                    <img src="/images/MinhLe.png" alt="Jason" style="width: 20vw; min-width: 70px; text-align: center; border-radius: 50%;">
+                    <p style="text-align: center;">
+                        Quang Minh Le
+                    </p>
+                </th>
+            </tr>
+        </table>
     </div>
 
     <!-- Bottom Navigation -->
