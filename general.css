@@ -281,23 +281,24 @@ nav.topNav>a {
 nav.topNav>a>div {
     border: 2px solid rgb(53, 149, 191);
     border-bottom: 3px solid rgb(53, 149, 191);
-    height: 95px;
+    height: 80px;
     margin: 0;
     border-radius: 0;
     transition: .3s;
     color: white;
+    vertical-align: center;
 }
 
 nav.topNav>a>div:hover {
     background-color: rgb(42, 133, 172);
     color: rgb(211, 255, 255);
-    font-size: 110%;
+    font-size: 120%;
 }
 
 a#selected>div {
     background-color: rgb(0, 137, 196);
     color: rgb(211, 255, 255);
-    font-size: 110%;
+    font-size: 120%;
 }
 
 /* Bottom Nav List Format */
@@ -388,8 +389,63 @@ footer {
     text-align: center;
 }
 
+/* Dropdown Menu*/
+.dropdown {
+    all: unset;
+    display: none; /* Hidden for computer screen */
+    position: fixed;
+    top: 18px;
+    left: 0;
+    z-index: 10; /* Appear before other elements */
+}
+.dropdown button {
+    background-color: rgb(0, 137, 196);
+    border-radius: .2rem;
+    color: whitesmoke;
+    padding: 1rem 1rem;
+    transition: .3s;
+    border: none;
+}
+
+.dropdown a {
+    all:unset;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: .3s;
+}
+
+.dropdown .content {
+    all:unset;
+    display: none;
+    background-color: rgb(200, 238, 255);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 5px 5px 10px rgb(100, 100, 100);
+    border-radius: .2rem;
+    z-index: 10;
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: rgb(44, 163, 214);
+}
+
+.dropdown a:hover {
+    background-color: rgb(133, 201, 230);
+    color: whitesmoke;
+}
+
 /* Mobile phones (Hide weird navigation) */
 @media only screen and (max-width: 900px) {
+    .dropdown {
+        display: inline-block;
+    }
+
     nav.topNav {
         display: none;
     }
