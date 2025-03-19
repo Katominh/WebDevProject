@@ -38,12 +38,11 @@
         }
 
         dd:hover {
-            font-size: 105%;
-            size: 105%;
+            font-size: 1.35rem;
         }
         /* Links */
         a {
-            transition: .5s;
+            transition: .3s;
         }
 
         a:hover {
@@ -69,18 +68,49 @@
             transition: .5s;
         }
 
+        /* HTML Form */
+        fieldset {
+            width: 60%; 
+            margin: auto;
+        }
+
+        label {
+            font-size: 1.3rem;
+        }
+
         /* For Our Names */
         th>img {
             width: 20vw; 
             min-width: 70px; 
             text-align: center; 
             border-radius: 50%;
+            transition: .5s
+        }
+
+        th>img:hover {
+            width: 25vw; 
+            box-shadow: 1px 1px 20px rgb(106, 76, 0);
+        }
+
+        th {
+            transition: .5s;
+        }
+
+        th:hover {
+            color: darkgoldenrod
         }
 
         /* Phone */
         @media screen and (max-width: 830px) {
+            fieldset {
+                width: 90%;
+            }
             dl>a>img {
                 min-width: 100%;
+            }
+
+            dd {
+                font-size: .95rem;
             }
 
             .Contact>div>a {
@@ -94,6 +124,10 @@
             article {
                 margin: 7px 0;
                 padding: 1rem;
+            }
+
+            input, select, textarea{
+                margin-bottom: .5rem;
             }
         }
     </style>
@@ -527,24 +561,24 @@
     <!-- HTML Form -->
     <div>
         <h2>Interested in Following Us?</h2>
-        <fieldset style="width: 50%; margin: auto;">
+        <fieldset>
             <legend>Subcribe to Our Website!</legend>
-            <form method="post" style="margin: 1rem; line-height: 150%;">
+            <form method="post" style="margin: 1rem;">
                 <label for="email">Email: </label>
                 <input type="email" id="email" name="email" required> <br>
                 <label for="phone">Phone (Optional): </label>
                 <input type="tel" id="phone" name="phone"> <br>
-                <label for="space"> Interested in news outside of Solar System? </label>
+                <label for="space"> Interested in news <em>outside</em> of Solar System? </label>
                 <select name="space" id="space">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select> <br>
-                <label for="news"> Want to recieve news from other space websites? </label>
+                <label for="news"> Want to recieve news from <strong>other space websites</strong>? </label>
                 <select name="news" id="news">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select> <br>
-                <label for="question">Have a question? Ask us! </label> <br>
+                <label for="question">Have a <i>question</i>? Ask us! </label> <br>
                 <textarea name="question" rows="10" cols="70" style="width: 100%;"
                     placeholder="E.g. How did planets become where they are?"></textarea>
                 <br>
@@ -556,8 +590,8 @@
         <script>
             function sent() {
                 const email = document.getElementById('email').value;
-                if (email == "") {
-                    window.alert("Please enter your email!"); // Set up alert
+                if (email == "" || !email.includes("@")) {
+                    window.alert("Please enter your email correctly!"); // Set up alert
                     return;
                 }
 
