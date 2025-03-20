@@ -16,7 +16,7 @@ body>div {
 }
 
 body>div:hover {
-    margin: .5rem;
+    margin: .75rem .5rem;
 }
 
 /* Headings & Headers*/

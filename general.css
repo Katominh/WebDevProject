@@ -33,9 +33,9 @@ header {
     border-radius: 0 0 .5rem .5rem;
     color: white;
     font-size: 200%;
+    width: 100%;
     padding-top: 5px;
     padding-bottom: 0;
-    width: 100%;
     animation: enlarge 1s -0.1s both;
 }
 
@@ -76,6 +76,26 @@ h2 {
 }
 
 /* for Header too */
+#mainHeader {
+    background: darkcyan url(https://listverse.com/wp-content/uploads/2013/10/solar-system-1200x720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainHeader>h1 {
+    padding: 3rem 1rem;
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+
 #index {
     background: darkcyan url(https://png.pngtree.com/thumb_back/fh260/background/20240430/pngtree-orange-light-background-image_15722879.jpg);
     background-position: cover;
