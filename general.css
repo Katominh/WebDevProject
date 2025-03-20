@@ -56,7 +56,7 @@ h2 {
 
 /* for Header too */
 #mainHeader {
-    background: gray url(https://listverse.com/wp-content/uploads/2013/10/solar-system-1200x720.jpg);
+    background: gray url(/images/main.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,7 +71,6 @@ h2 {
 
 #mainHeader>h1 {
     padding: 3rem 1rem;
-    backdrop-filter: blur(10px);
     width: 100%;
 }
 
