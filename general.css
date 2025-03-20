@@ -134,8 +134,13 @@ table {
 }
 
 /* Floating images and text */
-p {
-    font-size: 1rem;
+p, li, dd{
+    font-size: 1.3rem;
+}
+
+caption {
+    font-size: 1.1rem;
+    padding: .5rem 0;
 }
 
 .specialText,
@@ -164,7 +169,7 @@ div.specialText {
     flex: 1;
     padding: 1em;
     color: rgb(255, 190, 92);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     margin-left: 1em;
 }
 
@@ -201,7 +206,7 @@ iframe {
 
 .planets h2,
 .planets p {
-    transition: .3s;
+    transition: .5s;
     text-decoration: none;
 
 }
@@ -218,11 +223,11 @@ iframe {
 }
 
 .planets:hover h2 {
-    font-size: 160%;
+    font-size: 2.1rem;
 }
 
 .planets:hover p {
-    font-size: 110%;
+    font-size: 1.5rem;
 }
 
 /* Navigation link */
@@ -465,18 +470,12 @@ footer {
         margin-right: auto;
         padding: .5rem 2rem;
         text-align: center;
+        font-size: 1.2rem;
     }
 
     .Footer img {
         margin-left: 8px;
         margin-right: 8px;
-    }
-}
-
-/* Mobile phones (Primary) */
-@media only screen and (max-width: 650px) {
-    .extra { /* Hides Extraneous & Overcrowding Elements */
-        display: none !important;
     }
 
     .specialText {
@@ -485,6 +484,13 @@ footer {
 
     .specialText p {
         margin-left: 0;
+    }
+}
+
+/* Mobile phones (Smaller) */
+@media only screen and (max-width: 650px) {
+    .extra { /* Hides Extraneous & Overcrowding Elements */
+        display: none !important;
     }
 
     article {
