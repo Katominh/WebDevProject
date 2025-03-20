@@ -54,40 +54,19 @@ h2 {
     animation: flyIn 1s .25s both;
 }
 
-/* Simple Animation */
-@keyframes enlarge {
-    from {
-        padding-bottom: 0;
-    }
-    to {
-        padding-bottom: 10px;
-    }
-}
-
-@keyframes flyIn {
-    from {
-        opacity: 0;
-        transform: translate(0, -30px);
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 /* for Header too */
 #mainHeader {
-    background: darkcyan url(https://listverse.com/wp-content/uploads/2013/10/solar-system-1200x720.jpg);
+    background: gray url(https://listverse.com/wp-content/uploads/2013/10/solar-system-1200x720.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0;
-    padding-bottom: 0;
-    height: 90vh;
     width: 100vw;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: mainEnlarge 1s -0.1s forwards;
 }
 
 #mainHeader>h1 {
@@ -464,6 +443,36 @@ footer {
 .dropdown a:hover {
     background-color: rgb(133, 201, 230);
     color: whitesmoke;
+}
+
+/* Simple Animation */
+@keyframes enlarge {
+    from {
+        padding-bottom: 0;
+    }
+    to {
+        padding-bottom: 10px;
+    }
+}
+
+@keyframes mainEnlarge {
+    from {
+        transform: translate(0, -5px);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes flyIn {
+    from {
+        opacity: 0;
+        transform: translate(0, -30px);
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Mobile phones (Hide weird navigation) */
