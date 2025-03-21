@@ -1,11 +1,12 @@
 <!--Jason's Work-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venus</title>
-    
+
     <!--Links to stylesheet and icon-->
     <link rel="icon" type="images/icon" href="../images/Venus.png">
     <link rel="stylesheet" href="../general.css">
@@ -14,13 +15,26 @@
     <!-- Webpage styling -->
     <style>
         /* Colour theme */
-        body > div {border: 4px solid rgba(180, 117, 0, 0.714);}
-        header {background-color: rgba(180, 117, 0, 0.7);}
-        h2 {color: rgb(196, 160, 0);}
-        p > a:hover {color: rgb(0, 141, 141); font-size: 110%;}
+        body>div {
+            border: 4px solid rgba(180, 117, 0, 0.714);
+        }
+
+        header {
+            background-color: rgba(180, 117, 0, 0.7);
+        }
+
+        h2 {
+            color: rgb(196, 160, 0);
+        }
+
+        p>a:hover {
+            color: rgb(0, 141, 141);
+            font-size: 110%;
+        }
 
         /* Specific Venus Images */
-        .atmosphere, .noAtmosphere {
+        .atmosphere,
+        .noAtmosphere {
             width: 80%;
             height: 300px;
             background-size: cover;
@@ -30,10 +44,17 @@
             border: 2px solid rgb(180, 117, 0);
             text-align: center;
         }
-        .atmosphere {background-image: url(../images/VenusAtmosphere.png);}
-        .noAtmosphere {background-image: url(../images/VenusNoAtmosphere.png);}
+
+        .atmosphere {
+            background-image: url(../images/VenusAtmosphere.png);
+        }
+
+        .noAtmosphere {
+            background-image: url(../images/VenusNoAtmosphere.png);
+        }
     </style>
 </head>
+
 <body>
     <!-- Top Navigation -->
     <nav class="topNav flex">
@@ -48,7 +69,7 @@
         <a href="/Planets/neptune.html"><div>Neptune</div></a>
         <a href="/sources.html"><div>Sources</div></a>
     </nav>
-    
+
     <!--Get time-->
     <section id="time">Time Loading...</section>
 
@@ -60,10 +81,10 @@
             <a href="/Planets/mercury.html">Mercury</a>
             <a>Venus</a>
             <a href="/Planets/earth.html">Earth</a>
-            <a href="/Planets/mars.html">Mars</a> 
-            <a href="/Planets/jupiter.html">Jupiter</a> 
-            <a href="/Planets/saturn.html">Saturn</a> 
-            <a href="/Planets/uranus.html">Uranus</a> 
+            <a href="/Planets/mars.html">Mars</a>
+            <a href="/Planets/jupiter.html">Jupiter</a>
+            <a href="/Planets/saturn.html">Saturn</a>
+            <a href="/Planets/uranus.html">Uranus</a>
             <a href="/Planets/neptune.html">Neptune</a>
             <a href="/sources.html">Sources</a>
         </div>
@@ -73,60 +94,72 @@
     <header>
         <h1>Venus</h1>
     </header>
-    
+
     <!--Main Content-->
     <div>
         <h2>Overview</h2>
         <p>
-            Venus is the <strong>2<sup>nd</sup> planet</strong> from the Sun and is often called Earth's <em>"sister planet"</em> due to their similar size 
-            and composition. However, Venus has a <strong>thick atmosphere</strong> composed mainly of carbon dioxide, with clouds of sulfuric acid, 
-            making it the <strong>hottest planet</strong> in the Solar System. Venus rotates in the opposite direction to most planets in the 
-            Solar System, a phenomenon known as <em>retrograde rotation</em>.
+            Venus is the <strong>2<sup>nd</sup> planet</strong> from the Sun and is often called Earth's <em>"sister 
+            planet"</em> due to their similar size and composition. However, Venus has a <strong>thick atmosphere</strong> 
+            composed mainly of carbon dioxide, with clouds of sulfuric acid, making it the <strong>hottest planet</strong> 
+            in the Solar System. Venus rotates in the opposite direction to most planets in the Solar System, 
+            a phenomenon known as <em>retrograde rotation</em>.
         </p>
-        <img src="https://sm.mashable.com/t/mashable_in/photo/default/shutterstock-163793456_mh4f.1248.jpg" alt="Earth and Venus" style="width: 100%; max-width: 700px;">
+        <img src="https://sm.mashable.com/t/mashable_in/photo/default/shutterstock-163793456_mh4f.1248.jpg"
+            alt="Earth and Venus" style="width: 100%; max-width: 700px;">
     </div>
-    
+
+    <!--Facts-->
     <div>
         <h2>Key Facts</h2>
         <div class="flex" style="margin-left: auto; margin-right: auto; max-width: fit-content;">
-            <img src="https://www.cias.space/assets/images/solarsystemgif.gif" alt="Rocky Planets' Orbits" style="width: 100%; max-width: 600px; flex: 1;">
+            <img src="https://www.cias.space/assets/images/solarsystemgif.gif" alt="Rocky Planets' Orbits"
+                style="width: 100%; max-width: 600px; flex: 1;">
             <ul>
-            <li><strong>Distance from Sun:</strong> ~108.2 million km </li>
-            <li><strong>Orbital Period:</strong> 225 Earth days</li>
-            <li><strong>Rotation Period:</strong> 243 Earth days</li>
-            <li><strong>Diameter:</strong> 12,104 km</li>
-            <li><strong>Moons:</strong> 0 (It's <em>lonely</em>!)</li>
+                <li><strong>Distance from Sun:</strong> ~108.2 million km </li>
+                <li><strong>Orbital Period:</strong> 225 Earth days</li>
+                <li><strong>Rotation Period:</strong> 243 Earth days</li>
+                <li><strong>Diameter:</strong> 12,104 km</li>
+                <li><strong>Moons:</strong> 0 (It's <em>lonely</em>!)</li>
             </ul>
         </div>
     </div>
-    
-    <!--Facts-->
+
     <div>
         <h2>Fun Facts</h2>
         <div class="flex">
             <ul>
-                <li>Venus is the <strong>hottest planet</strong> in the Solar System, with surface temperatures reaching up to <strong>471 °C (880 °F)</strong>.</li>
-                <li>Venus has a <strong>thick atmosphere</strong> composed mainly of carbon dioxide, with clouds of sulfur.</li>
-                <li>Venus rotates in the opposite direction to most planets in the Solar System, a phenomenon known as <strong>retrograde rotation</strong>.</li>
+                <li>
+                    Venus is the <strong>hottest planet</strong> in the Solar System, with surface temperatures reaching
+                    up to <strong>471 °C (880 °F)</strong>.
+                </li>
+                <li>
+                    Venus has a <strong>thick atmosphere</strong> composed mainly of carbon dioxide, with clouds of
+                    sulfur.
+                </li>
+                <li>
+                    Venus rotates in the opposite direction to most planets in the Solar System, a phenomenon known as
+                    <strong>retrograde rotation</strong>.
+                </li>
                 <li>Venus is often called Earth's <em>"sister planet"</em> due to their similar size and composition.</li>
             </ul>
-            <img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41598-018-38117-x/MediaObjects/41598_2018_38117_Fig1_HTML.png" 
-            alt="Venus Heat Map" style="width: 100%; max-width: 600px;">
-    
+            <img src="https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41598-018-38117-x/MediaObjects/41598_2018_38117_Fig1_HTML.png"
+                alt="Venus Heat Map" style="width: 100%; max-width: 600px;">
         </div>
     </div>
-    
+
     <!--Orbit Info-->
     <div>
         <h2>Venus Orbit</h2>
-            <p style="margin: 1rem;">
-                Almost all planets in the Solar System rotate <strong>counterclockwise</strong> on their axes and orbit the Sun in the same direction. 
-                Venus also follows a counterclockwise orbit but rotates <strong>clockwise</strong> on its axis. One theory for this unusual rotation 
-                suggests that a <em>massive collision</em> early in its history caused it to tilt and reverse its spin. The only other planet 
-                with a clockwise rotation is <a href="/Planets/uranus.html"><b>Uranus</b></a>, which is tilted almost completely on its side. <em>Interesting, huh?</em>
-            </p>
-            <img src="https://www.rmg.co.uk/sites/default/files/styles/max_2600x2600/public/Venus%20Phase%20Evolution%20%C2%A9%20Roger%20Hutchinson%20Winner.jpg?itok=bWKe-AuO" 
-            alt="Venus Phases" style="width: 100%; max-width: 700px;">    
+        <p style="margin: 1rem;">
+            Almost all planets in the Solar System rotate <strong>counterclockwise</strong> on their axes and orbit the
+            Sun in the same direction. Venus also follows a counterclockwise orbit but rotates <strong>clockwise</strong> 
+            on its axis. One theory for this unusual rotation suggests that a <em>massive collision</em> early in its history 
+            caused it to tilt and reverse its spin. The only other planet with a clockwise rotation is 
+            <a href="/Planets/uranus.html"><b>Uranus</b></a>, which is tilted almost completely on its side. <em>Interesting, huh?</em>
+        </p>
+        <img src="https://www.rmg.co.uk/sites/default/files/styles/max_2600x2600/public/Venus%20Phase%20Evolution%20%C2%A9%20Roger%20Hutchinson%20Winner.jpg?itok=bWKe-AuO"
+            alt="Venus Phases" style="width: 100%; max-width: 700px;">
     </div>
 
     <!--Composition Table-->
@@ -157,9 +190,9 @@
     <div>
         <h2>Venus Surfaces</h2>
         <p>
-            Did you know that since Venus is covered in a <strong>dense layer of carbon dioxide</strong> and sulfur clouds - so much so that it is 
-            reflexive to visible light, making it the <em>brightest object</em> in the sky after the Sun and the Moon?
-            The actual Venus surface is rocky, mountainous, and orange due to the presence of iron oxide.
+            Did you know that since Venus is covered in a <strong>dense layer of carbon dioxide</strong> and sulfur
+            clouds - so much so that it is reflexive to visible light, making it the <em>brightest object</em> in the sky 
+            after the Sun and the Moon? The actual Venus surface is rocky, mountainous, and orange due to the presence of iron oxide.
         </p>
         <h2>Venus With & Without the Atmosphere</h2>
         <div class="atmosphere"></div>
@@ -169,16 +202,15 @@
     <div style="text-align: center;">
         <h2>From A Planet with Water To the Hottest!</h2>
         <p>
-            Based on several observations on Venus, scientists noticed some <em>unique characteristics</em> that could bear the resemblance of life! 
-            There is a theory that Venus may have contained <strong>shallow ocean water</strong> on its surface hundreds of millions of years ago! 
+            Based on several observations on Venus, scientists noticed some <em>unique characteristics</em> that could
+            bear the resemblance of life! There is a theory that Venus may have contained <strong>shallow ocean water</strong> 
+            on its surface hundreds of millions of years ago!
         </p>
         <!-- Provided by Youtube Embedded Sharing -->
-        <iframe style="width: 80%; min-height: 30vh;"
-        src="https://www.youtube.com/embed/BvXa1n9fjow" 
-        title="Venus 101 | National Geographic"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>Something Went Wrong 😞 Sorry!</iframe>
+        <iframe style="width: 80%; min-height: 30vh;" src="https://www.youtube.com/embed/BvXa1n9fjow"
+            title="Venus 101 | National Geographic"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Something Went Wrong 😞 Sorry!</iframe>
         <p style="margin-top: 0; font-size: 75%;">
             &copy; Video by National Geographic 2018
         </p>
@@ -189,10 +221,12 @@
         <h2>Gallery</h2>
         <section class="gallery">
             <img src="../images/Venus.png" alt="Happy Venus Art">
-            <img src="https://www.thoughtco.com/thmb/zx71j6FP0qwIkZCweRriG4tHaww=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1024px-Venus_globe-5a88ae823de423003738f750.jpg" alt="Venus Seen From Telescope">
+            <img src="https://www.thoughtco.com/thmb/zx71j6FP0qwIkZCweRriG4tHaww=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1024px-Venus_globe-5a88ae823de423003738f750.jpg"
+                alt="Venus Seen From Telescope">
             <img src="../images/Venus.gif" alt="Venus Spinning Art">
             <img src="https://nssdc.gsfc.nasa.gov/planetary/image/venusglobe.gif" alt="Colored Venus Topology">
-            <img src="https://miro.medium.com/v2/resize:fit:1400/0*8qrZOc7nRCew_1rW" alt="Venus Surface" style="flex: 2">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/0*8qrZOc7nRCew_1rW" alt="Venus Surface"
+                style="flex: 2">
         </section>
         <p style="text-align: right; color: rgb(205, 128, 3); font-size: 75%; margin-bottom: 0; margin-top: 0;">
             &uArr; Look! It's Venus surface from a spacecraft!
@@ -207,7 +241,7 @@
         <ul class="navigate">
             <li><a href="/Planets/mercury.html"> Mercury</a> |</li>
             <li>&nbsp;Venus&nbsp;|</li>
-            <li><a href ="/Planets/earth.html">Earth</a> |</li>
+            <li><a href="/Planets/earth.html">Earth</a> |</li>
             <li><a href="/Planets/mars.html">Mars</a> |</li>
             <li><a href="/Planets/jupiter.html">Jupiter</a> |</li>
             <li><a href="/Planets/saturn.html">Saturn</a> |</li>
@@ -233,7 +267,7 @@
             <ul>
                 <li><a href="/sources.html#websites">Websites</a></li>
                 <li><a href="/sources.html#videos">Videos</a></li>
-                <li><a href ="/sources.html#news">News Articles</a></li>
+                <li><a href="/sources.html#news">News Articles</a></li>
             </ul>
         </div>
         <!--Static and clickable Images-->
@@ -244,18 +278,21 @@
                     Instagram
                 </a>
                 <a href="https://discord.com">
-                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source" alt="Discord Logo">
+                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source"
+                        alt="Discord Logo">
                     Discord
                 </a>
                 <a href="https://www.facebook.com">
-                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Facebook Logo">
+                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc"
+                        alt="Facebook Logo">
                     Facebook
-               </a>
+                </a>
             </div>
         </div>
     </footer>
-    
+
     <!--Link to Javascript & get time-->
     <script src="/time.js"></script>
 </body>
+
 </html>
