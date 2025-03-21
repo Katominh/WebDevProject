@@ -249,7 +249,7 @@ a#selected>div {
     z-index: 10; /* Appear on top other elements */
 }
 
-.dropdown:hover .content, .dropdown:focus .content { /* For phone tap */
+.dropdown:hover .content, .dropdown:focus-within .content { /* For phone tap */
     display: block;
 }
 
@@ -364,11 +364,21 @@ footer {
     }
 }
 
+@keyframes swipeIn {
+    from {
+        transform: translate(-100px,0)
+    }
+    to {
+        transform: translate(0,0)
+    }
+}
+
 /* Mobile phones (Hide weird navigation) */
 @media only screen and (max-width: 900px) {
     /* Show Dropdown Menu instead of Top Navigation */
     .dropdown {
         display: inline-block;
+        animation: swipeIn .75s forwards;
     }
 
     nav.topNav {
