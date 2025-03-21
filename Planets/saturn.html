@@ -14,12 +14,9 @@
 
     <!--Saturn Style body-->
     <style>
-        body {
-            width: 100%;
-        }
-
+        /* Colour theme */
         .saturnHeader {
-            background-color: rgba(195, 146, 79, 0.7)
+            background-color: rgba(195, 146, 79, 0.7);
         }
 
         body .body {
@@ -27,10 +24,12 @@
             color: rgb(55, 50, 40);
         }
 
+        /* List */
         body>div>div>ul {
             margin-right: 20px;
         }
 
+        /* Gallery */
         .gallery-gifs {
             display: contents;
         }
@@ -39,12 +38,20 @@
             width: 10vw;
         }
 
+        @media only screen and (max-width: 650px){
+            .gallery-gifs img {
+                width: 50%;
+            }
+        }
+
+        /* Hexagon Section */
         .hexagon {
             width: 25vw;
             max-width: 800px;
             min-width: 200px;
         }
-        .saturn-hexagon{
+
+        .saturn-hexagon {
             display: flex;
             margin-right: 20px;
         }
@@ -55,36 +62,16 @@
 
     <!-- Top Navigation -->
     <nav class="topNav flex">
-        <a href="/index.html">
-            <div>Solar System</div>
-        </a>
-        <a href="/Planets/mercury.html">
-            <div>Mercury</div>
-        </a>
-        <a href="/Planets/venus.html">
-            <div>Venus</div>
-        </a>
-        <a href="/Planets/earth.html">
-            <div>Earth</div>
-        </a>
-        <a href="/Planets/mars.html">
-            <div>Mars</div>
-        </a>
-        <a href="/Planets/jupiter.html">
-            <div>Jupiter</div>
-        </a>
-        <a id="selected">
-            <div>Saturn</div>
-        </a>
-        <a href="/Planets/uranus.html">
-            <div>Uranus</div>
-        </a>
-        <a href="/Planets/neptune.html">
-            <div>Neptune</div>
-        </a>
-        <a href="/sources.html">
-            <div>Sources</div>
-        </a>
+        <a href="/index.html"><div>Solar System</div></a>
+        <a href="/Planets/mercury.html"><div>Mercury</div></a>
+        <a href="/Planets/venus.html"><div>Venus</div></a>
+        <a href="/Planets/earth.html"><div>Earth</div></a>
+        <a href="/Planets/mars.html"><div>Mars</div></a>
+        <a href="/Planets/jupiter.html"><div>Jupiter</div></a>
+        <a id="selected"><div>Saturn</div></a>
+        <a href="/Planets/uranus.html"><div>Uranus</div></a>
+        <a href="/Planets/neptune.html"><div>Neptune</div></a>
+        <a href="/sources.html"><div>Sources</div></a>
     </nav>
 
     <!--Get time-->
@@ -98,10 +85,10 @@
             <a href="/Planets/mercury.html">Mercury</a>
             <a href="/Planets/venus.html">Venus</a>
             <a href="/Planets/earth.html">Earth</a>
-            <a href="/Planets/mars.html">Mars</a> 
-            <a href="/Planets/jupiter.html">Jupiter</a> 
-            <a>Saturn</a> 
-            <a href="/Planets/uranus.html">Uranus</a> 
+            <a href="/Planets/mars.html">Mars</a>
+            <a href="/Planets/jupiter.html">Jupiter</a>
+            <a>Saturn</a>
+            <a href="/Planets/uranus.html">Uranus</a>
             <a href="/Planets/neptune.html">Neptune</a>
             <a href="/sources.html">Sources</a>
         </div>
@@ -116,8 +103,8 @@
     <div class="body">
         <h2>Overview</h2>
         <p>
-            Saturn is the sixth planet from the Sun and the second-largest in our solar system, famous for its 
-            <strong>stunning ring system</strong>. It is a gas giant composed mainly of hydrogen and helium, with 
+            Saturn is the sixth planet from the Sun and the second-largest in our solar system, famous for its
+            <strong>stunning ring system</strong>. It is a gas giant composed mainly of hydrogen and helium, with
             <em>no solid surface</em>.
         </p>
     </div>
@@ -128,10 +115,8 @@
         <ul>
             <li><strong>Diameter:</strong> ~120,500 km (9.5 times Earth&apos;s diameter)</li>
             <li><strong>Gravity:</strong> 10.4 m/s<sup>2</sup> (about 91% of Earth&apos;s gravity)</li>
-            <li><strong>Atmosphere:</strong> Mostly hydrogen and helium, with traces of methane, ammonia, and other
-                gases</li>
-            <li><strong>Moons:</strong> 146 confirmed moons, including Titan, the second-largest moon in the solar
-                system</li>
+            <li><strong>Atmosphere:</strong> Mostly hydrogen and helium, with traces of methane, ammonia, and othergases</li>
+            <li><strong>Moons:</strong> 146 confirmed moons, including Titan, the second-largest moon in the solarsystem</li>
             <li><strong>Temperature:</strong> -178&#8451; (varies depending on depth in the atmosphere)</li>
         </ul>
     </div>
@@ -142,20 +127,30 @@
             <li><b>Saturn could float on water</b></li>
             <ul>
                 <li>
-                    It has an average density lower than water, meaning if you could find a bathtub big enough, <em>Saturn would float!</em>
+                    It has an average density lower than water, meaning if you could find a bathtub big enough,
+                    <em>Saturn would float!</em>
                 </li>
             </ul>
             <li><b>The rings are super thin</b></li>
             <ul>
-                <li>Despite stretching 282,000 km wide, they&apos;re only 10 to 30 meters thick (<em>thinner than a football field</em>)</li>
+                <li>
+                    Despite stretching 282,000 km wide, they&apos;re only 10 to 30 meters thick (<em>thinner than a
+                    football field</em>)
+                </li>
             </ul>
             <li><b>It has a weird hexagon at its North Pole</b></li>
             <ul>
-                <li>Saturn&apos;s North Pole has a gigantic hexagonal storm, a <strong>mystery</strong> scientists are still studying!</li>
+                <li>
+                    Saturn&apos;s North Pole has a gigantic hexagonal storm, a <strong>mystery</strong> scientists are
+                    still studying!
+                </li>
             </ul>
             <li><b>A year on Saturn is nearly 30 Earth years!</b></li>
             <ul>
-                <li>While Saturn spins fast (<em>one day is equal to 10.7 Earth hours</em>), it takes 29.5 Earth Years to orbit the Sun</li>
+                <li>
+                    While Saturn spins fast (<em>one day is equal to 10.7 Earth hours</em>), it takes 29.5 Earth Years
+                    to orbit the Sun
+                </li>
             </ul>
         </ul>
     </div>
@@ -192,8 +187,8 @@
                 <li>A massive six-sided jet stream at Saturn&apos; North Pole</li>
                 <li>About <em>30,000km (20,000 miles)</em> across. It is big enough to fit <strong>four Earths</strong> inside</li>
                 <li>Winds inside hexagon move at speed of <strong>322 km/h (200mph)</strong></li>
-                <li>The hexagon appears <em>blue in winter and golden in summer</em>, possibly due to chemical reactions in
-                    Saturn&apos;s atmosphere driven by sunlight</li>
+                <li>The hexagon appears <em>blue in winter and golden in summer</em>, possibly due to chemical reactions
+                    in Saturn&apos;s atmosphere driven by sunlight</li>
             </ul>
             <img class="hexagon"
                 src="https://assets.science.nasa.gov/content/dam/science/psd/solar/internal_resources/1491/saturn_hexagon_black_and_white.gif?w=2048&h=2048&fit=clip&crop=faces%2Cfocalpoint"
@@ -210,8 +205,7 @@
                 <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExejQxc2s0Mjdna3duYm51dmRia3RqOTdueTM4bmEzMXVrdHVkNHVieCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NIEwGIcrm80tW/giphy.gif"
                     alt="titan moon">
                 <img src="https://scitechdaily.com/images/Saturn-Illustration.gif" alt="saturn rings">
-                <img src="https://www.skymarvels.com/infopages/images/Saturn%20Floats%20-%20SkyMarvels.gif"
-                    alt="saturn flaoting on water">
+                <img src="https://www.skymarvels.com/infopages/images/Saturn%20Floats%20-%20SkyMarvels.gif" alt="saturn flaoting on water">
                 <img src="https://lowell.edu/wp-content/uploads/2022/08/SaturnOppositionV2.gif" alt="saturn sun ortbit">
             </div>
         </section>
