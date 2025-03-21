@@ -56,9 +56,8 @@ h2 {
 
 /* for Header too */
 #mainHeader {
-    background: gray url(/images/main.png);
+    background: gray url(/images/main.png) no-repeat fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0;
     width: 100vw;
