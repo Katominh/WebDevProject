@@ -131,7 +131,7 @@ table {
 }
 
 /* Floating images and text */
-p, li, dd{
+p, li, dd, dt{
     font-size: 1.3rem;
 }
 

@@ -13,7 +13,7 @@
 
     <!-- Webpage styling -->
     <style>
-        /* Colour theme */
+        /* General Body Styling */
         body {
             width: 100%;
             overflow-x: hidden;
@@ -23,23 +23,26 @@
             border: 4px solid rgb(183, 125, 0);
         }
 
+        /* Headings */
         h2 {
             color: rgb(225, 148, 15);
             text-align: center;
         }
 
-        /* For each category */
+        /* Text Styling */
         strong {
             line-height: 2rem;
         }
 
         dd {
             text-indent: -1rem;
+            transition: .5s;
         }
 
         dd:hover {
             font-size: 1.35rem;
         }
+
         /* Links */
         a {
             transition: .3s;
@@ -57,88 +60,82 @@
             height: auto;
             border: .3rem solid rgb(35, 255, 174);
             border-radius: 10px;
+            transition: .5s;
         }
 
         dl>a>img:hover {
             width: 45%;
         }
 
-        dd,
-        dl>a>img {
-            transition: .5s;
-        }
-
         /* HTML Form */
         fieldset {
-            width: 60%; 
+            width: 60%;
             margin: auto;
         }
 
-        label {
+        label,
+        textarea,
+        select,
+        input,
+        legend {
             font-size: 1.3rem;
         }
 
-        /* For Our Names */
+        /* Contributors Section */
         th>img {
-            width: 20vw; 
-            min-width: 70px; 
-            text-align: center; 
+            width: 20vw;
+            min-width: 70px;
+            text-align: center;
             border-radius: 50%;
-            transition: .5s
+            transition: .5s;
         }
 
         th>img:hover {
-            width: 25vw; 
             box-shadow: 1px 1px 20px rgb(106, 76, 0);
         }
 
         th {
+            text-align: center;
             transition: .5s;
         }
 
         th:hover {
-            color: darkgoldenrod
+            color: darkgoldenrod;
         }
 
-        /* Patreon */
+        /* Patreon Section */
         .patreon>a>img {
-            width: 250px;
+            width: 20%;
+            min-width: 150px;
             border-radius: 10px;
             transition: .5s;
         }
 
         .patreon>a:hover>img {
-            width: 275px;
+            width: 22%;
         }
 
-        /* Phone */
+        /* Responsive Phones */
         @media screen and (max-width: 830px) {
+
+            /* HTML Form */
             fieldset {
                 width: 90%;
             }
+
+            input,
+            select,
+            textarea {
+                margin-bottom: .5rem;
+            }
+
+            /* Images & Text */
             dl>a>img {
                 min-width: 100%;
             }
 
             dd {
                 font-size: .95rem;
-            }
-
-            .Contact>div>a {
-                flex-direction: column;
-            }
-
-            .Solar {
-                flex: 1;
-            }
-
-            article {
-                margin: 7px 0;
-                padding: 1rem;
-            }
-
-            input, select, textarea{
-                margin-bottom: .5rem;
             }
         }
     </style>
@@ -212,30 +209,35 @@
             <dt><strong>Solar System</strong></dt>
             <dd>
                 NASA. “Solar System Exploration - NASA Science.” <i>Science.nasa.gov</i>, 2024,
-                <a href="https://www.science.nasa.gov/solar-system/"
-                    target="_blank">www.science.nasa.gov<wbr>/solar-system/</a>. <br> <br>
+                <a href="https://www.science.nasa.gov/solar-system/" target="_blank">
+                    www.science.nasa.gov<wbr>/solar-system/
+                </a>. <br> <br>
             </dd>
             <dd>
                 Worth, Josh. “If the Moon Were Only 1 Pixel - a Tediously Accurate Map of the Solar System.”
                 <i>Joshworth.com</i>, Mar 2014,
-                <a href="https://www.joshworth.com/dev/pixelspace/pixelspace_solarsystem.html"
-                    target="_blank">www.joshworth.com/dev<wbr>/pixelspace/pixelspace_<wbr>solarsystem.html</a>.<br> <br>
+                <a href="https://www.joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" target="_blank">
+                    www.joshworth.com/dev<wbr>/pixelspace/pixelspace_<wbr>solarsystem.html
+                </a>.<br> <br>
             </dd>
 
             <!-- Mercury (Edilson) -->
             <dt><b>Mercury</b> <br> <br></dt>
-            <dd>Wooster Physicists. (2018, May 1). <i>On Mercury, one day lasts two years</i>. Wooster Physicists Blog.
-                <a href="https://woosterphysicists.scotblogs.wooster.edu/2018/05/01/on-mercury-one-day-lasts-two-years/"
-                    target="_blank">
+            <dd>Sky & Telescope. (n.d.). 
+                <a href="https://skyandtelescope.org/online-gallery/the-planet-mercury-and-its-comet-like-tail/" target="_blank">
+                    The planet Mercury and its comet-like tail
+                </a>. Sky & Telescope.
             </dd><br>
-
-            <dd>The Daily. (2023, August 16). <a
-                    href="https://thedaily.case.edu/mercurys-mysteries-exploring-the-first-planet-from-the-sun/"
-                    target="_blank">Mercury&apos;s mysteries: Exploring the first planet from the Sun</a>. Case Western
-                Reserve University.</dd><br>
-            <dd>Sky & Telescope. (n.d.). <a
-                    href="https://skyandtelescope.org/online-gallery/the-planet-mercury-and-its-comet-like-tail/"
-                    target="_blank">The planet Mercury and its comet-like tail</a>. Sky & Telescope.</dd><br>
+            <dd>The Daily. (2023, August 16). 
+                <a href="https://thedaily.case.edu/mercurys-mysteries-exploring-the-first-planet-from-the-sun/" target="_blank">
+                    Mercury&apos;s mysteries: Exploring the first planet from the Sun
+                </a>. Case Western Reserve University.
+            </dd><br>
+            <dd>Wooster Physicists. (2018, May 1). <i>On Mercury, one day lasts two years</i>. Wooster Physicists Blog.
+                <a href="https://woosterphysicists.scotblogs.wooster.edu/2018/05/01/on-mercury-one-day-lasts-two-years/" target="_blank">
+                    Wooster Physicists Blog
+                </a> 
+            </dd><br>
 
             <!-- Venus (Jason) -->
             <dt><strong>Venus</strong></dt>
@@ -300,37 +302,46 @@
 
             <!-- Mars (Edilson) -->
             <dt><b>Mars</b></dt>
-            <dd>YouTube. (2021, November 16). <a href="https://www.youtube.com/watch?v=8aELPjferw4"
-                    target="_blank">Video
-                    Title</a>. YouTube.
-                [https://www.youtube.com/watch?v=8aELPjferw4](https://www.youtube.com/watch?v=8aELPjferw4)</dd><br>
+            <dd>
+                BRIGHT SIDE. “Why Sunsets Are Blue on Mars.” YouTube, 30 Nov. 2022, 
+                <a href="https://www.youtube.com/watch?v=8aELPjferw4">www.youtube.com/watch?v=8aELPjferw4</a>
+                . Accessed 21 Mar. 2025.
+            </dd><br>
 
             <dd>Dobrijevic, Daisy. “Mars&apos; Atmosphere: Composition, Climate & Weather.” Space.com, 17 Sept. 2023,
                 <a href="https://www.space.com/16903-mars-atmosphere-climate-weather.html" target="_blank">
                     www.space.com/<wbr>16903-mars-atmosphere<wbr>-climate-weather.html
                 </a>.
             </dd> <br>
-            <dd>Sky at Night Magazine. (n.d.). <a href="https://www.skyatnightmagazine.com/space-science/olympus-mons"
-                    target="_blank">Olympus Mons: The largest volcano in the solar system</a>. BBC Sky at Night
-                Magazine.</dd><br>
+            <dd>Reddit. (2020, December 17). 
+                <a href="https://www.reddit.com/r/spaceporn/comments/k0mkoy/the_grand_canyon_of_mars/" target="_blank">
+                    The Grand Canyon of Mars
+                </a>. Reddit, r/spaceporn.
+            </dd><br>
 
-            <dd>Reddit. (2020, December 17). <a
-                    href="https://www.reddit.com/r/spaceporn/comments/k0mkoy/the_grand_canyon_of_mars/"
-                    target="_blank">The Grand Canyon of Mars</a>. Reddit, r/spaceporn.</dd><br>
+            <dd>Sky at Night Magazine. (n.d.). 
+                <a href="https://www.skyatnightmagazine.com/space-science/olympus-mons" target="_blank">
+                    Olympus Mons: The largest volcano in the solar system
+                </a>. BBC Sky at Night Magazine.
+            </dd><br>
 
-            <dd>Study.com. (n.d.). <a href="https://study.com/academy/lesson/newtons-laws-and-weight-mass-gravity.html"
-                    target="_blank">Newton's laws and weight, mass, gravity</a>. Study.com.</dd><br>
+            <dd>Sky at Night Magazine. (n.d.).
+                 <a href="https://www.skyatnightmagazine.com/space-science/the-moons-of-mars" target="_blank">
+                    The moons of Mars
+                </a>. BBC Sky at Night Magazine.
+            </dd><br>
 
-            <dd>Sky at Night Magazine. (n.d.). <a
-                    href="https://www.skyatnightmagazine.com/space-science/the-moons-of-mars" target="_blank">The moons
-                    of Mars</a>. BBC Sky at Night Magazine.</dd><br>
+            <dd>Study.com. (n.d.). 
+                <a href="https://study.com/academy/lesson/newtons-laws-and-weight-mass-gravity.html" target="_blank">
+                    Newton's laws and weight, mass, gravity
+                </a>. Study.com.
+            </dd><br>
 
             <!-- Jupiter (Minh Le) -->
             <dt><strong>Jupiter</strong></dt>
             <dd>
                 NASA. “Jupiter facts - NASA Science.” <i>Science.nasa.gov</i>, 2024,
-                <a href="https://science.nasa.gov/jupiter/jupiter-facts/"
-                    target="_blank">science.nasa.gov<wbr>/jupiter/jupiter-facts/</a>.
+                <a href="https://science.nasa.gov/jupiter/jupiter-facts/" target="_blank">science.nasa.gov<wbr>/jupiter/jupiter-facts/</a>.
                 <br> <br>
             </dd>
             <dd>
@@ -340,8 +351,7 @@
             </dd>
             <dd>
                 “What Is Jupiter&apos;s Atmosphere Made Of? | Mission Juno.” <i>Mission Juno</i>, 2011,
-                <a
-                    href="https://www.missionjuno.swri.edu/jupiter/atmosphere?show=hs_jupiter_atmosphere_story_what-is-jupiters-atmosphere-made-of">
+                <a href="https://www.missionjuno.swri.edu/jupiter/atmosphere?show=hs_jupiter_atmosphere_story_what-is-jupiters-atmosphere-made-of">
                     www.missionjuno.swri.edu/<wbr>jupiter/atmosphere?show=<wbr>hs_jupiter_atmosphere_story_<wbr>what-is-jupiters-<wbr>atmosphere-made-of
                 </a>. <br> <br>
             </dd>
@@ -349,31 +359,34 @@
             <!-- Saturn (Edilson) -->
             <dt><b>Saturn</b></dt>
             <dd>
-                Williams, Dave. “Saturn Fact Sheet.” <i>Nssdc.gsfc.nasa.gov</i>, 11 Jan. 2024,
-                <a
-                    href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html">nssdc.gsfc.nasa.gov/<wbr>planetary/factsheet/<wbr>saturnfact.html</a>.
-                <br>
+                Lowell Observatory. (n.d.). 
+                <a href="https://lowell.edu/what-is-the-saturn-opposition/" target="_blank">
+                    What is the Saturn opposition?
+                </a> Lowell Observatory.
             </dd><br>
 
-            <dd>NASA. (2018, May 4). <a
-                    href="https://science.nasa.gov/mission/cassini/science/saturn/hexagon-in-motion/"
-                    target="_blank">Saturn's hexagon in motion</a>. NASA.</dd><br>
+            <dd>NASA. (2018, May 4). 
+                <a href="https://science.nasa.gov/mission/cassini/science/saturn/hexagon-in-motion/" target="_blank">
+                    Saturn's hexagon in motion
+                </a>. NASA.
+            </dd><br>
 
-            <dd>Giphy. (n.d.). <a href="https://giphy.com/gifs/nasa-space-nasagif-NIEwGIcrm80tW" target="_blank">NASA
-                    space gif</a>. Giphy.</dd><br>
+            <dd>SciTechDaily. (2021, June 19). <a href="https://scitechdaily.com/helium-rain-is-real-experiments-validate-the-possibility-of-helium-rain-inside-jupiter-and-saturn/" target="_blank">
+                Helium rain is real: Experiments validate the possibility of helium rain inside Jupiter and Saturn
+            </a>. SciTechDaily.
+            </dd><br>
 
+            <dd>Sky Marvels. (n.d.). <a href="https://www.skymarvels.com/infopages/saturninfo.htm" target="_blank">
+                Saturn: The Ringed Planet
+            </a>. Sky Marvels.
+            </dd><br>
 
-            <dd>SciTechDaily. (2021, June 19). <a
-                    href="https://scitechdaily.com/helium-rain-is-real-experiments-validate-the-possibility-of-helium-rain-inside-jupiter-and-saturn/"
-                    target="_blank">Helium rain is real: Experiments validate the possibility of helium rain inside
-                    Jupiter and Saturn</a>. SciTechDaily.</dd><br>
-
-            <dd>Sky Marvels. (n.d.). <a href="https://www.skymarvels.com/infopages/saturninfo.htm"
-                    target="_blank">Saturn: The Ringed Planet</a>. Sky Marvels.</dd><br>
-
-
-            <dd>Lowell Observatory. (n.d.). <a href="https://lowell.edu/what-is-the-saturn-opposition/"
-                    target="_blank">What is the Saturn opposition?</a> Lowell Observatory.</dd><br>
+            <dd>
+                Williams, Dave. “Saturn Fact Sheet.” <i>Nssdc.gsfc.nasa.gov</i>, 11 Jan. 2024,
+                <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html">
+                    nssdc.gsfc.nasa.gov/<wbr>planetary/factsheet/<wbr>saturnfact.html
+                </a>.
+            </dd><br>
 
 
             <!-- Uranus (Minh Le) -->
@@ -494,18 +507,17 @@
                 <a href="https://www.astronomy.com" target="_blank">www.astronomy.com</a>. <br> <br>
             </dd>
             <dd>
+                “Home.” Planetary.org, 2020, <a href="https://www.planetary.org" target="_blank">www.planetary.org</a>.
+                <br> <br>
+            </dd>
+            <dd>
                 “Science News | Science Mission Directorate.” <i>Nasa.gov</i>, 2019,
-                <a href="https://science.nasa.gov/science-news/"
-                    target="_blank">science.nasa.gov<wbr>/science-news/</a>. <br> <br>
+                <a href="https://science.nasa.gov/science-news/" target="_blank">science.nasa.gov<wbr>/science-news/</a>. <br> <br>
             </dd>
             <dd>
                 “Space News, Articles and Features | New Scientist.” <i>Newscientist.com</i>, 2019,
                 <a href="https://www.newscientist.com/subject/space/"
                     target="_blank">www.newscientist.com<wbr>/subject/space/</a>. <br> <br>
-            </dd>
-            <dd>
-                “Home.” Planetary.org, 2020, <a href="https://www.planetary.org" target="_blank">www.planetary.org</a>.
-                <br> <br>
             </dd>
         </dl>
     </div>
@@ -580,6 +592,7 @@
                 <label for="phone">Phone (Optional): </label>
                 <input type="tel" id="phone" name="phone"> <br>
                 <label for="space"> Interested in news <em>outside</em> of Solar System? </label>
+
                 <select name="space" id="space">
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
@@ -589,15 +602,18 @@
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>
                 </select> <br>
+
                 <label for="question">Have a <i>question</i>? Ask us! </label> <br>
                 <textarea name="question" rows="10" cols="70" style="width: 100%;"
                     placeholder="E.g. How did planets become where they are?"></textarea>
                 <br>
+
                 <input type="button" value="Subscribe! 🚀" onclick="sent()" style="padding: .5rem;">
             </form>
         </fieldset>
-        <h2 id="output"></h2>
+
         <!-- Javascript for the form -->
+        <h2 id="output"></h2>
         <script>
             function sent() {
                 const email = document.getElementById('email').value;
@@ -616,8 +632,9 @@
         <div class="patreon" style="text-align: center;">
             <h2>Support Us on Patreon!</h2>
             <p>
-                If you enjoy our content and want to support our efforts in creating more educational resources about the Solar System, 
-                consider becoming a patron! Your support really helps us keep this project expanding.
+                If you enjoy our content and want to support our efforts in creating more <u>educational resources</u>
+                about the <em>Solar System</em>, consider becoming a <strong>patron</strong>! Your support really helps us
+                keep this project expanding.
                 <br>
                 Click below! &dArr;
             </p>
@@ -631,22 +648,16 @@
         <table style="box-shadow:none; width: 80%; margin: auto">
             <tr>
                 <th>
-                    <img src="/images/Edilson.png" alt="Jason" style="width: 20vw; min-width: 70px; text-align: center; border-radius: 50%;">
-                    <p style="text-align: center;">
-                        Edilson Chi
-                    </p>
+                    <img src="/images/Edilson.png" alt="Jason">
+                    <p>Edilson Chi</p>
                 </th>
                 <th>
-                    <img src="/images/Jason.png" alt="Jason" style="width: 20vw; min-width: 70px; text-align: center; border-radius: 50%;">
-                    <p style="text-align: center;">
-                        Minh Khang Nguyen
-                    </p>
+                    <img src="/images/Jason.png" alt="Jason">
+                    <p>Minh Khang Nguyen</p>
                 </th>
                 <th>
-                    <img src="/images/MinhLe.png" alt="Jason" style="width: 20vw; min-width: 70px; text-align: center; border-radius: 50%;">
-                    <p style="text-align: center;">
-                        Quang Minh Le
-                    </p>
+                    <img src="/images/MinhLe.png" alt="Jason">
+                    <p>Quang Minh Le</p>
                 </th>
             </tr>
         </table>

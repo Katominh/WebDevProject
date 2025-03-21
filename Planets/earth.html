@@ -14,7 +14,11 @@
 
     <!-- Webpage styling -->
     <style>
-        /* Colour theme */
+        /* General Styling */
+        body {
+            width: 100%;
+        }
+
         body>div {
             border: 4px solid rgb(0, 111, 6);
         }
@@ -27,6 +31,7 @@
             color: rgb(31, 165, 249);
         }
 
+        /* Earth Night Section */
         .EarthNight {
             color: lightgoldenrodyellow;
             background: rgb(0, 9, 57) url(../images/EarthNight.png) top no-repeat;
@@ -45,18 +50,16 @@
         .EarthNight>h2+p {
             margin-bottom: 50vh;
         }
-        
-        /* Hides Extraneous Elements */
+
+        /* Responsive Phones */
         @media only screen and (max-width: 850px) {
             .EarthNight>h2+p {
                 margin: 1rem;
             }
+
             iframe {
                 min-height: 32vh;
             }
-        }
-        body{
-            width: 100%;
         }
     </style>
 </head>
@@ -64,16 +67,36 @@
 <body>
     <!-- Top Navigation -->
     <nav class="topNav flex">
-        <a href="/index.html"><div>Solar System</div></a>
-        <a href="/Planets/mercury.html"><div>Mercury</div></a>
-        <a href="/Planets/venus.html"><div>Venus</div></a>
-        <a id="selected"><div>Earth</div></a>
-        <a href="/Planets/mars.html"><div>Mars</div></a> 
-        <a href="/Planets/jupiter.html"><div>Jupiter</div></a> 
-        <a href="/Planets/saturn.html"><div>Saturn</div></a> 
-        <a href="/Planets/uranus.html"><div>Uranus</div></a> 
-        <a href="/Planets/neptune.html"><div>Neptune</div></a>
-        <a href="/sources.html"><div>Sources</div></a>
+        <a href="/index.html">
+            <div>Solar System</div>
+        </a>
+        <a href="/Planets/mercury.html">
+            <div>Mercury</div>
+        </a>
+        <a href="/Planets/venus.html">
+            <div>Venus</div>
+        </a>
+        <a id="selected">
+            <div>Earth</div>
+        </a>
+        <a href="/Planets/mars.html">
+            <div>Mars</div>
+        </a>
+        <a href="/Planets/jupiter.html">
+            <div>Jupiter</div>
+        </a>
+        <a href="/Planets/saturn.html">
+            <div>Saturn</div>
+        </a>
+        <a href="/Planets/uranus.html">
+            <div>Uranus</div>
+        </a>
+        <a href="/Planets/neptune.html">
+            <div>Neptune</div>
+        </a>
+        <a href="/sources.html">
+            <div>Sources</div>
+        </a>
     </nav>
 
     <!--Get time-->
@@ -87,10 +110,10 @@
             <a href="/Planets/mercury.html">Mercury</a>
             <a href="/Planets/venus.html">Venus</a>
             <a>Earth</a>
-            <a href="/Planets/mars.html">Mars</a> 
-            <a href="/Planets/jupiter.html">Jupiter</a> 
-            <a href="/Planets/saturn.html">Saturn</a> 
-            <a href="/Planets/uranus.html">Uranus</a> 
+            <a href="/Planets/mars.html">Mars</a>
+            <a href="/Planets/jupiter.html">Jupiter</a>
+            <a href="/Planets/saturn.html">Saturn</a>
+            <a href="/Planets/uranus.html">Uranus</a>
             <a href="/Planets/neptune.html">Neptune</a>
             <a href="/sources.html">Sources</a>
         </div>
@@ -105,17 +128,18 @@
     <div>
         <h2>Overview</h2>
         <p>
-            Earth is the <strong>3<sup>rd</sup> planet</strong> from the Sun and the only known planet to support life. It has a
-            diverse range of ecosystems and is home to millions of species of plants and animals. Earth is also
-            the only planet in the Solar System with <em>liquid water</em> on its surface, which is essential for life as
-            we know it.
+            Earth is the <strong>3<sup>rd</sup> planet</strong> from the Sun and the only known planet to support life.
+            It has a diverse range of ecosystems and is home to millions of species of plants and animals. Earth is also
+            the only planet in the Solar System with <em>liquid water</em> on its surface, which is essential for life
+            as we know it.
         </p>
         <figure class="gallery">
             <img src="https://www.worldatlas.com/r/w1200/upload/67/bc/2a/shutterstock-126712838.jpg"
                 alt="Marine Ecosystem">
-            <img src="https://spiritbear.com/wp-content/uploads/2019/08/image-72-oiam-1.jpg" alt="Forest Ecosystem" class="extra">
+            <img src="https://spiritbear.com/wp-content/uploads/2019/08/image-72-oiam-1.jpg" alt="Forest Ecosystem"
+                class="extra">
             <img src="https://www.antarctica.gov.au/site/assets/files/38665/phytoplankton.1600x0.jpg"
-                alt="Microscopic Ecosystem"  class="extra">
+                alt="Microscopic Ecosystem" class="extra">
         </figure>
     </div>
 
@@ -204,8 +228,7 @@
         <h2>Play with Google Earth Map</h2>
         <p>
             Let's explore the Earth with <u>3D Earth Map</u>, won't you? Select any places you want to wish and see all
-            of
-            the <b>human ingenuity</b> and <b>natural beauty</b> of our planet!
+            of the <b>human ingenuity</b> and <b>natural beauty</b> of our planet!
         </p>
         <div style="text-align: center;">
             <iframe src="https://earth3dmap.com" title="Google Earth Map" style="border-color: green; min-width: 70vw">
@@ -219,14 +242,15 @@
         <h2 style="color: lightgoldenrodyellow;">Earth at Night!</h2>
         <p>
             <span>
-                Isn't it look so <strong>beautiful</strong>? This map shows the Earth at night, with the lights of cities and towns
-                visible even from space! It's amazing to see how much of the planet is lit up, and how different regions have
-                different levels of light.
+                Isn't it look so <strong>beautiful</strong>? This map shows the Earth at night, with the lights of
+                cities and towns visible even from space! It's amazing to see how much of the planet is lit up, and 
+                how different regions have different levels of light.
             </span>
         </p>
         <p class="extra">
             <span>
-                There are a lot of <em>fascinating</em> and <em>absurd</em> stories to be told from this map, don't you think? Check this
+                There are a lot of <em>fascinating</em> and <em>absurd</em> stories to be told from this map, don't you
+                think? Check this
                 video out! <br>
             </span>
         </p>
