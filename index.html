@@ -11,8 +11,144 @@
     <link rel="icon" type="images/icon" href="/images/Rocket.png">
     <link rel="stylesheet" href="general.css">
     <style>
-        img { /* make 2 images translucent */
+        img {
+            /* make 2 images translucent */
             opacity: 90%;
+        }
+
+        /* Main Header Section */
+        #mainHeader {
+            background: gray url(/images/main.png) no-repeat fixed;
+            background-position: center;
+            background-size: cover;
+            padding-top: 0;
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: mainEnlarge 1s -0.1s forwards;
+        }
+
+        #mainHeader>h1 {
+            padding: 3rem 1rem;
+            width: 100%;
+        }
+
+        @keyframes mainEnlarge {
+            from {
+                transform: translate(0, -5px);
+            }
+
+            to {
+                transform: translate(0, 0);
+            }
+        }
+
+        /* Article */
+        article {
+            border: 4px solid rgb(0, 49, 81);
+            margin: 7px 1rem;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            background-image: url(https://papers.co/wallpaper/papers.co-ng79-star-sky-night-space-dark-blue-36-3840x2400-4k-wallpaper.jpg);
+        }
+
+        article h2,
+        article p {
+            color: rgb(249, 218, 142);
+        }
+
+
+        /* Text & Background for Alternate Planets */
+        div.right {
+            background-position: right;
+        }
+
+        div.left {
+            text-align: right;
+        }
+
+        /* Planet Div Links */
+        .planets {
+            color: white;
+            text-decoration: none;
+        }
+
+        .planets h2,
+        .planets p {
+            transition: .5s;
+            text-decoration: none;
+        }
+
+        .planets:hover h2,
+        .planets:hover p {
+            color: aqua;
+            text-shadow: 1px 1px 20px wheat;
+        }
+
+        .planets:active h2,
+        .planets:active p {
+            color: darkblue;
+        }
+
+        .planets:hover h2 {
+            font-size: 2.1rem;
+        }
+
+        .planets:hover p {
+            font-size: 1.5rem;
+        }
+
+        /* Special Text Section */
+        .specialText,
+        .specialText p,
+        .specialText img {
+            border-radius: .5rem;
+            margin: auto;
+        }
+
+        div.specialText {
+            /* Undo some CSS properties */
+            background-color: unset;
+            border: unset;
+            display: flex;
+            padding: 2em;
+        }
+
+        .specialText img {
+            flex: 1;
+            min-width: 300px;
+            width: 50%;
+            height: 50%;
+        }
+
+        .specialText p {
+            flex: 1;
+            padding: 1em;
+            color: rgb(255, 190, 92);
+            background-color: rgba(0, 0, 0, 0.9);
+            margin-left: 1em;
+        }
+
+        /* Repsonsive Phone */
+        @media only screen and (max-width: 900px) {
+
+            /* specialText --> Column */
+            .specialText {
+                flex-direction: column;
+            }
+
+            .specialText p {
+                margin-left: 0;
+            }
+
+            /* Article Spacing */
+            article {
+                margin: 7px 0;
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -48,10 +184,10 @@
             <a href="/Planets/mercury.html">Mercury</a>
             <a href="/Planets/venus.html">Venus</a>
             <a href="/Planets/earth.html">Earth</a>
-            <a href="/Planets/mars.html">Mars</a> 
-            <a href="/Planets/jupiter.html">Jupiter</a> 
-            <a href="/Planets/saturn.html">Saturn</a> 
-            <a href="/Planets/uranus.html">Uranus</a> 
+            <a href="/Planets/mars.html">Mars</a>
+            <a href="/Planets/jupiter.html">Jupiter</a>
+            <a href="/Planets/saturn.html">Saturn</a>
+            <a href="/Planets/uranus.html">Uranus</a>
             <a href="/Planets/neptune.html">Neptune</a>
             <a href="/sources.html">Sources</a>
         </div>
@@ -61,8 +197,8 @@
     <article style="border: 4px solid darkgoldenrod;">
         <h2><strong>Introduction</strong></h2>
         <p>
-            Welcome to our website! Here, you will learn about many <strong>fascinating</strong> and <em>exciting</em> facts about our
-            Solar System! 
+            Welcome to our website! Here, you will learn about many <strong>fascinating</strong> and <em>exciting</em>
+            facts about our Solar System!
             <span class="extra"> <!--Too much information on phone-->
                 We encourage everyone to <strong>think like a scientist</strong>, explore your curiosity, and discover
                 new things for yourself - beyond the realm of our home planet!
@@ -70,8 +206,8 @@
             <br> <br>
         </p>
         <p>
-            Let's get started with this question: <strong>Do you know which planet is closest to Earth?</strong> Check this video
-            below!
+            Let's get started with this question: <strong>Do you know which planet is closest to Earth?</strong> Check
+            this videobelow!
         </p>
         <!-- Provided by Youtube Embedded Sharing (except for the width and height attributes) -->
         <iframe max-width=50vw src="https://www.youtube.com/embed/SumDHcnCRuU?mute=0"
@@ -90,12 +226,12 @@
         <img src="https://static.scientificamerican.com/sciam/cache/file/2CE63B47-DF59-4F86-9C1D141B74195D95_source.gif"
             alt="The Sun Spinning GIF">
         <p>
-            Hey look! It's our <strong>Sun</strong> spinning around! The Sun is the <em>center</em> of our Solar System, and all the planets orbit
-            around it.
-            If somebody asks you, "<i>What is the closest star to Earth?</i>" You can proudly say, "<i><strong>The Sun!</strong></i>" 🌞
+            Hey look! It's our <strong>Sun</strong> spinning around! The Sun is the <em>center</em> of our Solar System,
+            and all the planets orbit around it. If somebody asks you, "<i>What is the closest star to Earth?</i>" You can proudly say, 
+            "<i><strong>The Sun!</strong></i>" 🌞
             <br><br>
-            Also, did you know that even with all the planets' masses combined, the Sun still takes up
-            <strong>99.86%</strong> of the Solar System's total mass?
+            Also, did you know that even with all the planets' masses combined, the Sun still takes up <strong>99.86%</strong> of the 
+            Solar System's total mass?
         </p>
     </div>
 
@@ -130,29 +266,28 @@
 
     <!--For the Asteriod Belt -->
     <div class="specialText" style="background: url(/images/AsteroidBelt.png) no-repeat left;">
-        <img src="/images/Asteroids.gif" alt="Asteriod GIF" style="min-width: 100px; max-width: 400px; box-shadow: none;">
+        <img src="/images/Asteroids.gif" alt="Asteriod GIF"
+            style="min-width: 100px; max-width: 400px; box-shadow: none;">
         <p style="color: gainsboro;">
-            <strong>Ooooh!</strong> ~ It's the <em>Main Asteroid Belt!</em> It is located between Mars and Jupiter and is 
-            made up of <strong>millions</strong> of asteroids in various size and shapes.
+            <strong>Ooooh!</strong> ~ It's the <em>Main Asteroid Belt!</em> It is located between Mars and Jupiter and
+            is made up of <strong>millions</strong> of asteroids in various size and shapes.
 
             <br><br>
             Although in fictional movies and writings, the Asteroid Belt is often portrayed as a <u>dangerous place</u>
-            to travel through, in reality, the
-            Asteroid Belt is <strong>mostly empty space</strong>. The average distance between each asteroid is about
-            <strong>600,000 miles</strong> apart 🤯 <em>Crazy right?</em>
+            to travel through, in reality, the Asteroid Belt is <strong>mostly empty space</strong>. The average distance 
+            between each asteroid is about <strong>600,000 miles</strong> apart 🤯 <em>Crazy right?</em>
         </p>
     </div>
 
     <!-- For the Giant Gas Planets -->
     <div class="specialText">
         <p style="margin-right: 1em; text-align: right; color: rgb(255, 230, 183)">
-            Have you wondered at one point: <strong><em>"Why are the Giant Gas Planets called 'Giant Gas Planets' in the first place? 
-            Why are they considered planets at all?"</em></strong>
+            Have you wondered at one point: <strong><em>"Why are the Giant Gas Planets called 'Giant Gas Planets' in the
+            first place? Why are they considered planets at all?"</em></strong>
 
             <br><br>
             They are made of different compositions than the previous 4 planets and are <strong><em><u>much,
-            MUCH,</u></em></strong> larger in size - even <strong>hundreds</strong> of
-            times more massive than Earth 🤔
+            MUCH,</u></em></strong> larger in size - even <strong>hundreds</strong> of times more massive than Earth 🤔
         </p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Jupiter_-_Great_Red_Spot_-_PJ7-60_61_62_-_Balanced_%2849803032983%29.png"
             alt="Jupiter R" style="flex: 2; margin: auto">
@@ -160,8 +295,8 @@
             As you've probably guessed ~
 
             <br><br>
-            They are called <strong>giant gas planets</strong> because of their immense size and their <em>gassy composition</em>, mainly hydrogen
-            and helium.
+            They are called <strong>giant gas planets</strong> because of their immense size and their <em>gassy
+            composition</em>, mainly hydrogen and helium.
 
             <br><br>
             And they are still planets because they <strong>orbit around the Sun</strong>, just like others!
@@ -174,11 +309,13 @@
             If the Sun is the size of a <strong>soccer ball</strong>, then how far would Earth be? 1 meter? 5 meters? 100 meters?
             <br><br>
 
-            <b>Turns out!</b> The Earth would be the size of a <em>pin</em> and located about ~<strong>24 meters</strong> away from the Sun!
+            <b>Turns out!</b> The Earth would be the size of a <em>pin</em> and located about ~<strong>24
+            meters</strong> away from the Sun!
 
             <br><br>
-            - Also, have you heard of the prediction for the <strong>Ninth Planet?</strong> It's called <em>"Planet Nine"</em> or <em>"Planet X"</em> and
-            is believed to be a <strong>super-Earth-sized planet</strong> located in the outer Solar System. Check this out! &rarr;
+            - Also, have you heard of the prediction for the <strong>Ninth Planet?</strong> It's called <em>"Planet Nine"</em> or 
+            <em>"Planet X"</em> and is believed to be a <strong>super-Earth-sized planet</strong> located in the outer Solar System. 
+            Check this out! &rarr;
         </p>
 
         <div style="all:unset; flex: 1; margin: 1rem;">
@@ -228,10 +365,12 @@
     <!-- For Solar System scale -->
     <div class="specialText extra">
         <p style="margin-right: 5px;">
-            Also, do you know how <strong>big</strong> our Solar System really is? It's <strong><em>big, BIG - extremely BIG!</em></strong> <br>
+            Also, do you know how <strong>big</strong> our Solar System really is? It's <strong><em>big, BIG - extremely BIG!</em></strong> 
+            <br>
             How far would the <strong>moon</strong> be if it were only <em>1 pixel</em> big? Check this website out!
         </p>
-        <iframe src="https://www.joshworth.com/dev/pixelspace/pixelspace_solarsystem.html" title="If The Moon Were Only 1 Pixel"></iframe>
+        <iframe src="https://www.joshworth.com/dev/pixelspace/pixelspace_solarsystem.html"
+            title="If The Moon Were Only 1 Pixel"></iframe>
     </div>
 
     <nav class="bottom">
@@ -265,7 +404,7 @@
             <ul>
                 <li><a href="/sources.html#websites">Websites</a></li>
                 <li><a href="/sources.html#videos">Videos</a></li>
-                <li><a href ="/sources.html#news">News Articles</a></li>
+                <li><a href="/sources.html#news">News Articles</a></li>
             </ul>
         </div>
         <!--Static and clickable Images-->
@@ -276,13 +415,15 @@
                     Instagram
                 </a>
                 <a href="https://discord.com">
-                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source" alt="Discord Logo">
+                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDb6rYcBtJvTvH3UoAS4JFNDaxGhmKNaMwgElLURlRFeVkLCjkfnXmWtINWZIrPGYq0-&format=source"
+                        alt="Discord Logo">
                     Discord
                 </a>
                 <a href="https://www.facebook.com">
-                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc" alt="Facebook Logo">
+                    <img src="https://store-images.s-microsoft.com/image/apps.30645.9007199266245907.cb06f1f9-9154-408e-b4ef-d19f2325893b.ac3b465e-4384-42a8-9142-901c0405e1bc"
+                        alt="Facebook Logo">
                     Facebook
-               </a>
+                </a>
             </div>
         </div>
     </footer>
@@ -290,4 +431,5 @@
     <!--Link to Javascript & get time-->
     <script src="/time.js"></script>
 </body>
+
 </html>
