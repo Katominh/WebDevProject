@@ -12,20 +12,27 @@
     <link rel="stylesheet" href="../general.css">
     <link rel="stylesheet" href="../planets.css">
 
-    <!--Meercury Style body-->
+    <!--Mercury Style body-->
     <style>
-        body {
-            width: 100%;
-        }
-
+        /* Colour theme */
         .mercuryHeader {
-            background-color: rgba(140, 140, 148, 0.7)
+            background-color: rgba(140, 140, 148, 0.7);
         }
 
         body .body {
             border: 4px solid rgb(104, 105, 109);
         }
 
+        /* Text */
+        ul {
+            margin-right: 20px;
+        }
+
+        .mercury-day .mercury-day-text {
+            margin-right: 20px;
+        }
+
+        /* Mercury Image */
         .mercury-rotation {
             display: grid;
             grid-column: span;
@@ -35,60 +42,31 @@
             height: auto;
         }
 
+        .mercury-tail {
+            max-height: 20vw;
+        }
+
+        /* Flex */
         .mercury-day {
             display: flex;
             justify-content: space-between;
-
-        }
-
-        ul {
-            margin-right: 20px;
-        }
-
-        .mercury-day .mercury-day-text {
-            margin-right: 20px;
-        }
-
-        .mercury-tail{
-            max-height: 20vw;
         }
     </style>
 </head>
 
 <body>
-
     <!-- Top Navigation -->
     <nav class="topNav flex">
-        <a href="/index.html">
-            <div>Solar System</div>
-        </a>
-        <a id="selected">
-            <div>Mercury</div>
-        </a>
-        <a href="/Planets/venus.html">
-            <div>Venus</div>
-        </a>
-        <a href="/Planets/earth.html">
-            <div>Earth</div>
-        </a>
-        <a href="/Planets/mars.html">
-            <div>Mars</div>
-        </a>
-        <a href="/Planets/jupiter.html">
-            <div>Jupiter</div>
-        </a>
-        <a href="/Planets/saturn.html">
-            <div>Saturn</div>
-        </a>
-        <a href="/Planets/uranus.html">
-            <div>Uranus</div>
-        </a>
-        <a href="/Planets/neptune.html">
-            <div>Neptune</div>
-        </a>
-        <a href="/sources.html">
-            <div>Sources</div>
-        </a>
+        <a href="/index.html"><div>Solar System</div></a>
+        <a id="selected"><div>Mercury</div></a>
+        <a href="/Planets/venus.html"><div>Venus</div></a>
+        <a href="/Planets/earth.html"><div>Earth</div></a>
+        <a href="/Planets/mars.html"><div>Mars</div></a>
+        <a href="/Planets/jupiter.html"><div>Jupiter</div></a>
+        <a href="/Planets/saturn.html"><div>Saturn</div></a>
+        <a href="/Planets/uranus.html"><div>Uranus</div></a>
+        <a href="/Planets/neptune.html"><div>Neptune</div></a>
+        <a href="/sources.html"><div>Sources</div></a>
     </nav>
 
     <!--Get time-->
@@ -151,19 +129,25 @@
             </ul>
             <li><b>Mercury is shrinking</b></li>
             <ul>
-                <li>The planet&apos;s core is cooling, causing Mercury to shrink over time. This has created <b>massive
-                    cliffs</b> (called lobate scarps) that are hundreds of kilometers long.</li>
+                <li>
+                    The planet&apos;s core is cooling, causing Mercury to shrink over time. This has created <b>massive
+                    cliffs</b> (called lobate scarps) that are hundreds of kilometers long.
+                </li>
             </ul>
             <li><b>It has ice despite being the closest planet to the sun</b></li>
             <ul>
-                <li>Mercury&apos;s polar craters, which never receive sunlight, have <b>frozen water</b> trapped inside.
-                    NASA&apos;s MESSENGER spacecraft found this <i>surprising discovery</i> in 2012.</li>
+                <li>
+                    Mercury&apos;s polar craters, which never receive sunlight, have <b>frozen water</b> trapped inside.
+                    NASA&apos;s MESSENGER spacecraft found this <i>surprising discovery</i> in 2012.
+                </li>
             </ul>
             <li><b>Mercury has a tail like a comet</b></li>
             <ul>
-                <li>Due to solar radiation, Mercury sheds atoms from its surface, creating a thin, glowing <b>tail of
+                <li>
+                    Due to solar radiation, Mercury sheds atoms from its surface, creating a thin, glowing <b>tail of
                     sodium gas</b> that extends millions of kilometers into space. It&apos;s invisible to the naked eye but
-                    can be detected with special instruments!</li>
+                    can be detected with special instruments!
+                </li>
             </ul>
         </ul>
     </div>
@@ -179,17 +163,20 @@
                 </ul>
                 <li><b>Mercury&apos;s Orbit is SUPER FAST</b></li>
                 <ul>
-                    <li>It zips around the sun in just <i>88 Earth days</i>, the shortest year of any planet in the solar
-                        system.</li>
+                    <li>
+                        It zips around the sun in just <i>88 Earth days</i>, the shortest year of any planet in the solar
+                        system.
+                    </li>
                 </ul>
                 <li><b>3:2 Spin-Orbit Resonance</b></li>
                 <ul>
-                    <li>Unlike most planets, every <i>3 spins</i> Mercury does on its axis it completes <i>2 orbits</i> around the
-                        sun.</li>
+                    <li>
+                        Unlike most planets, every <i>3 spins</i> Mercury does on its axis it completes <i>2 orbits</i> around the
+                        sun.
+                    </li>
                 </ul>
             </ul>
-            <img class="mercury-rotation"
-                src="https://woosterphysicists.scotblogs.wooster.edu/files/2018/05/Mercury7Loop.gif"
+            <img class="mercury-rotation" src="https://woosterphysicists.scotblogs.wooster.edu/files/2018/05/Mercury7Loop.gif"
                 alt="mercury day vs year">
         </div>
     </div>
