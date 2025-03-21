@@ -249,7 +249,7 @@ a#selected>div {
     z-index: 10; /* Appear on top other elements */
 }
 
-.dropdown:hover .content {
+.dropdown:hover .content, .dropdown:focus .content { /* For phone tap */
     display: block;
 }
 
@@ -286,20 +286,24 @@ footer {
     padding: .5rem 2rem;
     transition: 0.5s;
 }
-
-.Footer:hover {
-    color: white;
-    font-size: 110%;
+.Footer p { 
+    font-size: 1.2rem;
     transition: 0.5s;
+}
+
+.Footer:hover p {
+    color: white;
+    font-size: 1.3rem;
 }
 
 .Solar {
     flex: 1.5;
 }
 
-.Sources,
+.Source,
 .Contact {
     flex: 1;
+    margin-top: 1rem;
 }
 
 /* Footer Links */
@@ -395,9 +399,8 @@ footer {
     }
 }
 
-/* More changes for smaller phone */
+/* Hide Extraneous Structures on Phone */
 @media only screen and (max-width: 650px) {
-    /* Hide Extraneous Elements */
     .extra {
         display: none !important;
     }
