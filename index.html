@@ -18,12 +18,12 @@
 
         /* Main Header Section */
         #mainHeader {
-            background: gray url(/images/main.png) no-repeat fixed;
+            background: rgb(0, 48, 90) url(/images/main.png) no-repeat fixed;
             background-position: center;
             background-size: cover;
             padding-top: 0;
             width: 100vw;
-            height: 90vh;
+            height: 95vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -134,7 +134,9 @@
 
         /* Repsonsive Phone */
         @media only screen and (max-width: 900px) {
-
+            #mainHeader {
+                height: 65vh;
+            }
             /* specialText --> Column */
             .specialText {
                 flex-direction: column;
