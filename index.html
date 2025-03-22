@@ -150,23 +150,59 @@
                 padding: 1rem;
             }
         }
+        
     </style>
 </head>
 
 <body>
     <!-- Top Navigation -->
-    <nav class="topNav flex">
-        <a id="selected"><div><strong>Solar System</strong></div></a>
-        <a href="/Planets/mercury.html"><div>Mercury</div></a>
-        <a href="/Planets/venus.html"><div>Venus</div></a>
-        <a href="/Planets/earth.html"><div>Earth</div></a>
-        <a href="/Planets/mars.html"><div>Mars</div></a> 
-        <a href="/Planets/jupiter.html"><div>Jupiter</div></a> 
-        <a href="/Planets/saturn.html"><div>Saturn</div></a> 
-        <a href="/Planets/uranus.html"><div>Uranus</div></a> 
-        <a href="/Planets/neptune.html"><div>Neptune</div></a>
-        <a href="/sources.html"><div>Sources</div></a>
+    <nav class="topNav">
+        <a id="selected">
+            <div><strong>Solar System</strong></div>
+        </a>
+        <a href="/Planets/mercury.html">
+            <div>Mercury</div>
+        </a>
+        <a href="/Planets/venus.html">
+            <div>Venus</div>
+        </a>
+        <a href="/Planets/earth.html">
+            <div>Earth</div>
+        </a>
+        <a href="/Planets/mars.html">
+            <div>Mars</div>
+        </a>
+        <a href="/Planets/jupiter.html">
+            <div>Jupiter</div>
+        </a>
+        <a href="/Planets/saturn.html">
+            <div>Saturn</div>
+        </a>
+        <a href="/Planets/uranus.html">
+            <div>Uranus</div>
+        </a>
+        <a href="/Planets/neptune.html">
+            <div>Neptune</div>
+        </a>
+        <a href="/sources.html">
+            <div>Sources</div>
+        </a>
     </nav>
+    <script>
+        let lastScrollY = 0;
+        const topNav = document.getElementsByClassName('topNav')[0];
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY) {
+                console.log('scrollDown');
+                topNav.classList.add('show');
+            } else {
+                console.log('scrollUp');
+                topNav.classList.remove('show');
+            }
+            lastScrollY = currentScrollY;
+        });
+    </script>
 
     <!--Get time-->
     <section id="time"><em>Time Loading...</em></section>
@@ -227,10 +263,12 @@
             alt="The Sun Spinning GIF">
         <p>
             Hey look! It's our <strong>Sun</strong> spinning around! The Sun is the <em>center</em> of our Solar System,
-            and all the planets orbit around it. If somebody asks you, "<i>What is the closest star to Earth?</i>" You can proudly say, 
+            and all the planets orbit around it. If somebody asks you, "<i>What is the closest star to Earth?</i>" You
+            can proudly say,
             "<i><strong>The Sun!</strong></i>" 🌞
             <br><br>
-            Also, did you know that even with all the planets' masses combined, the Sun still takes up <strong>99.86%</strong> of the 
+            Also, did you know that even with all the planets' masses combined, the Sun still takes up
+            <strong>99.86%</strong> of the
             Solar System's total mass?
         </p>
     </div>
@@ -275,7 +313,8 @@
 
             <br><br>
             Although in fictional movies and writings, the Asteroid Belt is often portrayed as a <u>dangerous place</u>
-            to travel through, in reality, the Asteroid Belt is <strong>mostly empty space</strong>. The average distance 
+            to travel through, in reality, the Asteroid Belt is <strong>mostly empty space</strong>. The average
+            distance
             between each asteroid is about <strong>600,000 miles</strong> apart 🤯 <em>Crazy right?</em>
         </p>
     </div>
@@ -284,11 +323,12 @@
     <div class="specialText">
         <p style="margin-right: 1em; text-align: right; color: rgb(255, 230, 183)">
             Have you wondered at one point: <strong><em>"Why are the Giant Gas Planets called 'Giant Gas Planets' in the
-            first place? Why are they considered planets at all?"</em></strong>
+                    first place? Why are they considered planets at all?"</em></strong>
 
             <br><br>
             They are made of different compositions than the previous 4 planets and are <strong><em><u>much,
-            MUCH,</u></em></strong> larger in size - even <strong>hundreds</strong> of times more massive than Earth 🤔
+                        MUCH,</u></em></strong> larger in size - even <strong>hundreds</strong> of times more massive
+            than Earth 🤔
         </p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Jupiter_-_Great_Red_Spot_-_PJ7-60_61_62_-_Balanced_%2849803032983%29.png"
             alt="Jupiter R" style="flex: 2; margin: auto">
@@ -297,7 +337,7 @@
 
             <br><br>
             They are called <strong>giant gas planets</strong> because of their immense size and their <em>gassy
-            composition</em>, mainly hydrogen and helium.
+                composition</em>, mainly hydrogen and helium.
 
             <br><br>
             And they are still planets because they <strong>orbit around the Sun</strong>, just like others!
@@ -307,15 +347,18 @@
     <!--For Space -->
     <div class="specialText">
         <p style="color: lightcyan">
-            If the Sun is the size of a <strong>soccer ball</strong>, then how far would Earth be? 1 meter? 5 meters? 100 meters?
+            If the Sun is the size of a <strong>soccer ball</strong>, then how far would Earth be? 1 meter? 5 meters?
+            100 meters?
             <br><br>
 
             <b>Turns out!</b> The Earth would be the size of a <em>pin</em> and located about ~<strong>24
-            meters</strong> away from the Sun!
+                meters</strong> away from the Sun!
 
             <br><br>
-            - Also, have you heard of the prediction for the <strong>Ninth Planet?</strong> It's called <em>"Planet Nine"</em> or 
-            <em>"Planet X"</em> and is believed to be a <strong>super-Earth-sized planet</strong> located in the outer Solar System. 
+            - Also, have you heard of the prediction for the <strong>Ninth Planet?</strong> It's called <em>"Planet
+                Nine"</em> or
+            <em>"Planet X"</em> and is believed to be a <strong>super-Earth-sized planet</strong> located in the outer
+            Solar System.
             Check this out! &rarr;
         </p>
 
@@ -366,7 +409,8 @@
     <!-- For Solar System scale -->
     <div class="specialText extra">
         <p style="margin-right: 5px;">
-            Also, do you know how <strong>big</strong> our Solar System really is? It's <strong><em>big, BIG - extremely BIG!</em></strong> 
+            Also, do you know how <strong>big</strong> our Solar System really is? It's <strong><em>big, BIG - extremely
+                    BIG!</em></strong>
             <br>
             How far would the <strong>moon</strong> be if it were only <em>1 pixel</em> big? Check this website out!
         </p>
@@ -401,7 +445,8 @@
             <p id="lastUpdate"></p> <!--To get update time-->
         </div>
 
-        <div class="Source Footer"><p>Explore Sources!</p>
+        <div class="Source Footer">
+            <p>Explore Sources!</p>
             <ul>
                 <li><a href="/sources.html#websites">Websites</a></li>
                 <li><a href="/sources.html#videos">Videos</a></li>
@@ -409,7 +454,8 @@
             </ul>
         </div>
         <!--Static and clickable Images-->
-        <div class="Contact Footer"><p>Contact Us</p>
+        <div class="Contact Footer">
+            <p>Contact Us</p>
             <div style="display: flex; align-items: center; margin: 0px; padding: 10px;">
                 <a href="https://www.instagram.com">
                     <img src="/images/Instagram.png" alt="Instagram Logo">

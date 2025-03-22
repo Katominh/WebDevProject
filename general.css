@@ -6,7 +6,8 @@
 
 /* General & Box Sizing */
 * {
-    box-sizing: border-box; /* for easier CSS layout */
+    box-sizing: border-box;
+    /* for easier CSS layout */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -215,13 +216,16 @@ a#selected>div {
 
 /* Dropdown Menu */
 .dropdown {
-    all: unset; /* Avoid CSS intended for other div */
-    display: none; /* Hide for computer screen */
+    all: unset;
+    /* Avoid CSS intended for other div */
+    display: none;
+    /* Hide for computer screen */
     position: fixed;
     transition: .3s;
     top: 18px;
     left: 0;
-    z-index: 10; /* Appear on top other elements */
+    z-index: 10;
+    /* Appear on top other elements */
 }
 
 .dropdown button {
@@ -237,7 +241,8 @@ a#selected>div {
     background-color: rgb(44, 163, 214);
 }
 
-.dropdown .content { /* For <div> containing the content */
+.dropdown .content {
+    /* For <div> containing the content */
     margin: 0;
     padding: 0;
     display: none;
@@ -246,14 +251,18 @@ a#selected>div {
     min-width: 100px;
     box-shadow: 5px 5px 10px rgb(100, 100, 100);
     border-radius: .2rem;
-    z-index: 10; /* Appear on top other elements */
+    z-index: 10;
+    /* Appear on top other elements */
 }
 
-.dropdown:hover .content, .dropdown:focus-within .content { /* For phone tap */
+.dropdown:hover .content,
+.dropdown:focus-within .content {
+    /* For phone tap */
     display: block;
 }
 
-.dropdown a { /* For dropdown links */
+.dropdown a {
+    /* For dropdown links */
     display: block;
     color: black;
     text-decoration: none;
@@ -286,7 +295,8 @@ footer {
     padding: .5rem 2rem;
     transition: 0.5s;
 }
-.Footer p { 
+
+.Footer p {
     font-size: 1.2rem;
     transition: 0.5s;
 }
@@ -366,15 +376,17 @@ footer {
 
 @keyframes swipeIn {
     from {
-        transform: translate(-100px,0)
+        transform: translate(-100px, 0)
     }
+
     to {
-        transform: translate(0,0)
+        transform: translate(0, 0)
     }
 }
 
 /* Mobile phones (Hide weird navigation) */
 @media only screen and (max-width: 900px) {
+
     /* Show Dropdown Menu instead of Top Navigation */
     .dropdown {
         display: inline-block;
@@ -414,4 +426,17 @@ footer {
     .extra {
         display: none !important;
     }
+}
+
+/*HididngTop Nav when scrolling*/
+.topNav {
+    position: fixed;
+    z-index: 1;
+    transform: translateY(-80px);
+    transition: 0.25s ease transform;
+}
+
+/*Property to show top navigation bar*/
+.show {
+    transform: translateY(0px);
 }

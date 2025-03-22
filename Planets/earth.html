@@ -62,7 +62,7 @@
 
 <body>
     <!-- Top Navigation -->
-    <nav class="topNav flex">
+    <nav class="topNav">
         <a href="/index.html"><div>Solar System</div></a>
         <a href="/Planets/mercury.html"><div>Mercury</div></a>
         <a href="/Planets/venus.html"><div>Venus</div></a>
@@ -74,6 +74,22 @@
         <a href="/Planets/neptune.html"><div>Neptune</div></a>
         <a href="/sources.html"><div>Sources</div></a>
     </nav>
+
+    <script>
+        let lastScrollY = 0;
+        const topNav = document.getElementsByClassName('topNav')[0];
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY) {
+                console.log('scrollDown');
+                topNav.classList.add('show');
+            } else {
+                console.log('scrollUp');
+                topNav.classList.remove('show');
+            }
+            lastScrollY = currentScrollY;
+        });
+    </script>
 
     <!--Get time-->
     <section id="time">Time Loading...</section>
