@@ -76,13 +76,32 @@
             const currentScrollY = window.scrollY;
             if (currentScrollY > lastScrollY) {
                 console.log('scrollDown');
-                topNav.classList.add('show');
-            } else {
-                console.log('scrollUp');
                 topNav.classList.remove('show');
+            } else if (currentScrollY == 0) {
+                console.log('start');
+                topNav.classList.remove('show');
+            } 
+            else {
+                console.log('scrollUp');
+                topNav.classList.add('show');
             }
             lastScrollY = currentScrollY;
         });
+
+        let timeout; 
+
+        function resetTimer() {
+            clearTimeout(timeout); 
+            timeout = setTimeout(() => {
+                document.getElementsByClassName("topNav")[0].classList.remove('show');
+            }, 3000);
+        }
+
+        // Detect user activity and reset timer
+        window.onload = resetTimer;
+        document.addEventListener("mousemove", resetTimer);
+        document.addEventListener("keydown", resetTimer);
+        document.addEventListener("touchstart", resetTimer);
     </script>
 
     <!--Get time-->
